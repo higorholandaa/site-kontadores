@@ -7,7 +7,7 @@
     <title>Navbar - Kontadores</title>
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -315,39 +315,49 @@
 
     <section class="clientes-section">
         <div class="clientes-texto">
-            <h2>Clientes</h2>
+            <h1><strong>Clientes</strong></h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis et nisi non pharetra.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis et nisi non
+                pharetra.
                 Nulla id tempus metus. Suspendisse malesuada eu dolor in scelerisque.
             </p>
         </div>
 
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <img src="https://via.placeholder.com/100x60?text=Logo+1" alt="Cliente 1" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+2" alt="Cliente 2" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+3" alt="Cliente 3" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+4" alt="Cliente 4" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+5" alt="Cliente 5" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+6" alt="Cliente 6" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+1" alt="Cliente 1" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+2" alt="Cliente 2" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+3" alt="Cliente 3" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+4" alt="Cliente 4" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+5" alt="Cliente 5" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+6" alt="Cliente 6" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+1" alt="Cliente 1" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+2" alt="Cliente 2" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+3" alt="Cliente 3" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+4" alt="Cliente 4" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+5" alt="Cliente 5" />
-                <img src="https://via.placeholder.com/100x60?text=Logo+6" alt="Cliente 6" />
+        <!-- <div class="carousel-container">
+            <div class="carousel-track-client">
+                <img src="img/alimenticias.png" alt="Cliente 1" />
+                <img src="img/gris.png" alt="Cliente 2" />
+                <img src="img/optilux.png" alt="Cliente 3" />
+                <img src="img/panama.png" alt="Cliente 4" />
+                <img src="img/services.png" alt="Cliente 5" />
+                <img src="img/traced.png" alt="Cliente 6" />
+                <img src="img/topex.png" alt="Cliente 1" />
             </div>
-            <div class="carousel-dots">
+            <div class="carousel-dots">-
                 <span class="dot active"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
+        </div> -->
+        <div class="swiper clients-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/alimenticias.png" alt="Cliente 1" /></div>
+                <div class="swiper-slide"><img src="img/gris.png" alt="Cliente 2" /></div>
+                <div class="swiper-slide"><img src="img/optilux.png" alt="Cliente 3" /></div>
+                <div class="swiper-slide"><img src="img/panama.png" alt="Cliente 4" /></div>
+                <div class="swiper-slide"><img src="img/services.png" alt="Cliente 5" /></div>
+                <div class="swiper-slide"><img src="img/traced.png" alt="Cliente 6" /></div>
+                <div class="swiper-slide"><img src="img/topex.png" alt="Cliente 7" /></div>
+
+                <div class="swiper-slide"><img src="img/alimenticias.png" alt="Cliente 1" /></div>
+                <div class="swiper-slide"><img src="img/gris.png" alt="Cliente 2" /></div>
+                <div class="swiper-slide"><img src="img/optilux.png" alt="Cliente 3" /></div>
+                <div class="swiper-slide"><img src="img/panama.png" alt="Cliente 4" /></div>
+                <div class="swiper-slide"><img src="img/services.png" alt="Cliente 5" /></div>
+                <div class="swiper-slide"><img src="img/traced.png" alt="Cliente 6" /></div>
+                <div class="swiper-slide"><img src="img/topex.png" alt="Cliente 7" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -417,6 +427,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!--Swiper JS via cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 <script>
@@ -430,7 +442,7 @@
 
 
 <script>
-    const track = document.querySelector('.carousel-track');
+    const track = document.querySelector('.carousel-track-client');
     const dots = document.querySelectorAll('.carousel-dots .dot');
     let currentSlide = 0;
 
@@ -446,8 +458,46 @@
         dot.addEventListener('click', () => showSlide(index));
     });
 
-    // Responsivo
     window.addEventListener('resize', () => showSlide(currentSlide));
+
+
+    const swiperClients = new Swiper('.clients-swiper', {
+        slidesPerView: 'auto', // Mostra quantos slides couberem
+        spaceBetween: 0, // Espaçamento entre os slides
+        centeredSlides: false, // Não centraliza o slide ativo
+        loop: true, // Rolagem infinita
+        autoplay: {
+            delay: 0, // Sem delay entre slides (para rolagem contínua)
+            disableOnInteraction: false,
+        },
+        speed: 5000,
+        effect: 'slide',
+        freeMode: {
+            enabled: true,
+            sticky: false,
+        },
+        on: {
+            init: function () {
+                this.el.addEventListener('mouseenter', () => {
+                    this.autoplay.stop();
+                });
+                this.el.addEventListener('mouseleave', () => {
+                    this.autoplay.start();
+                });
+            }
+        },
+        // Você pode adicionar breakpoints para responsividade
+        breakpoints: {
+            768: {
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+            }
+        }
+    });
 </script>
 
 
