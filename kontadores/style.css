@@ -163,7 +163,6 @@ html, body {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-top: 3rem; /* Espaçamento entre o parágrafo e a imagem */
     margin-bottom: 3rem; /* Espaçamento entre a imagem e a próxima seção */
 }
 
@@ -173,6 +172,7 @@ html, body {
 .decor-circle-top-right,
 .decor-shape-bottom-right,
 .decor-arrow-top-right,
+.decor-rectangle-bottom-left,
 .decor-shape-top-left {
     position: absolute;
     z-index: 0; 
@@ -212,10 +212,20 @@ html, body {
     z-index: 2;
     position: absolute;
     top: 70%;
-    left: 7%;
-    width: 150px;
+    left: 8%;
+    width: 115px;
     height: auto;
     transform: translate(-40%, -50%);
+}
+
+.decor-rectangle-bottom-left{
+    top: 94%;
+    right: 8%;
+    width: 115px;
+    height: auto;
+    transform: translate(30%, -30%);
+    position: absolute;
+    z-index: 2;
 }
 
 
@@ -504,7 +514,7 @@ html, body {
   }
   
   .titulo-central h2 {
-    font-size: 36px;
+    font-size: 2.9rem;
   }
   
   .titulo-central p {
@@ -527,8 +537,9 @@ html, body {
   }
   
   .accordion-header {
-    padding: 16px 20px;
-    background: linear-gradient(90deg, #3f51b5, #e1bdf3);
+    min-height: 70px;
+    padding: 8px 20px;
+    background: linear-gradient(to right, #0B003D 0%, #8395f1 55%, #E0A6F4 100%);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -584,7 +595,6 @@ html, body {
   }
   
   .accordion-content li::before {
-    content: '✔';
     position: absolute;
     left: 0;
     color: #e498f9;
@@ -687,6 +697,10 @@ html, body {
   .clientes-texto h2 {
     font-size: 32px;
     margin-bottom: 10px;
+  }
+
+  .clientes-texto h1{
+    font-size: 2.9rem; 
   }
   
   .clientes-texto p {

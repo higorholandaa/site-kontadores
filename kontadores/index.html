@@ -130,6 +130,7 @@
         <img src="img/arrow.png" alt="Elemento decorativo superior direito" class="decor-arrow-top-right">
         <img src="img/dot-rectangle.png" alt="Elemento decorativo inferior esquerdo" class="decor-shape-bottom-left">
         <img src="img/rectangle.png" alt="Elemento decorativo superior esquerdo" class="decor-shape-top-left">
+        <img src="img/rectangle.png" alt="Elemento decorativo superior esquerdo" class="decor-rectangle-bottom-left">
 
 
         <a href="#"><img class="img-arrow-double mb-5" src="img/doubleDown.png" /></a>
@@ -138,7 +139,7 @@
             <h2 class="fw-bold mb-3">
                 ¿Quiénes <span class="text-primary">somos?</span>
             </h2>
-            <p class="text-muted mb-5 px-5">
+            <p class="mx-5">
                 En Kontadores, hacemos más que contabilidad. Somos una firma de contadores públicos autorizados en
                 Panamá
                 que combina experiencia y visión joven para ayudarte a tener claridad sobre tus números,
@@ -245,9 +246,12 @@
             <!-- Acordeon 1 - aberto por padrão -->
             <div class="accordion-item open">
                 <div class="accordion-header">
-                    <h3>Servicios Contables y Fiscales</h3>
-                    <p>Llevamos tu contabilidad al día y te ayudamos a cumplir con todas tus obligaciones fiscales.</p>
-                    <span class="icon">▾</span>
+                    <div class="accordion-text-content">
+                        <h3>Servicios Contables y Fiscales</h3>
+                        <p>Llevamos tu contabilidad al día y te ayudamos a cumplir con todas tus obligaciones fiscales.
+                        </p>
+                    </div>
+                    <span class="icon"><i class="bi bi-plus-square"></i></span>
                 </div>
                 <div class="accordion-content">
                     <ul>
@@ -265,50 +269,64 @@
             <!-- Demais acordeons -->
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <h3>Declaraciones de Renta y Municipio</h3>
-                    <span class="icon">▾</span>
+                    <div class="accordion-text-content">
+                        <h3>Declaraciones de Renta y Municipio</h3>
+                    </div>
+                    <span class="icon"><i class="bi bi-plus-square"></i></span>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <h3>Planilla y Gestión Laboral</h3>
-                    <span class="icon">▾</span>
+                    <div class="accordion-text-center">
+                        <h3>Planilla y Gestión Laboral</h3>
+                    </div>
+                    <span class="icon"><i class="bi bi-plus-square"></i></span>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <h3>Constitución y Formalización de Empresas</h3>
-                    <span class="icon">▾</span>
+                    <div class="accordion-text-center">
+                        <h3>Constitución y Formalización de Empresas</h3>
+                    </div>
+                    <span class="icon"><i class="bi bi-plus-square"></i></span>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <h3>Devolución de Impuestos</h3>
-                    <span class="icon">▾</span>
+                    <div class="accordion-text-center">
+                        <h3>Devolución de Impuestos</h3>
+                    </div>
+                    <span class="icon"><i class="bi bi-plus-square"></i></span>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <h3>Auditorías Externas</h3>
-                    <span class="icon">▾</span>
+                    <div class="accordion-text-center">
+                        <h3>Auditorías Externas</h3>
+                    </div>
+                    <span class="icon"><i class="bi bi-plus-square"></i></span>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <h3>Otros Trámites</h3>
-                    <span class="icon">▾</span>
+                    <div class="accordion-text-center">
+                        <h3>Otros Trámites</h3>
+                    </div>
+                    <span class="icon"><i class="bi bi-plus-square"></i></span>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <h3>Otros Servicios Especiales</h3>
-                    <span class="icon">▾</span>
+                    <div class="accordion-text-center">
+                        <h3>Otros Servicios Especiales</h3>
+                    </div>
+                    <span class="icon"><i class="bi bi-plus-square"></i></span>
                 </div>
             </div>
         </div>
@@ -442,13 +460,13 @@
     const dots = document.querySelectorAll('.carousel-dots .dot');
     let currentSlide = 0;
 
-    function showSlide(index) {
-        const slideWidth = track.clientWidth;
-        track.style.transform = `translateX(-${index * slideWidth}px)`;
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[index].classList.add('active');
-        currentSlide = index;
-    }
+    // function showSlide(index) {
+    //     const slideWidth = track.clientWidth;
+    //     track.style.transform = `translateX(-${index * slideWidth}px)`;
+    //     dots.forEach(dot => dot.classList.remove('active'));
+    //     dots[index].classList.add('active');
+    //     currentSlide = index;
+    // }
 
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => showSlide(index));
@@ -458,12 +476,12 @@
 
 
     const swiperClients = new Swiper('.clients-swiper', {
-        slidesPerView: 'auto', // Mostra quantos slides couberem
-        spaceBetween: 0, // Espaçamento entre os slides
-        centeredSlides: false, // Não centraliza o slide ativo
-        loop: true, // Rolagem infinita
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        centeredSlides: false,
+        loop: true,
         autoplay: {
-            delay: 0, // Sem delay entre slides (para rolagem contínua)
+            delay: 0,
             disableOnInteraction: false,
         },
         speed: 5000,
