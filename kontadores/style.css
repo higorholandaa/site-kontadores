@@ -7,6 +7,11 @@ html, body {
   }
 
 
+  .team-section, .hero-section, .quienes-somos-section,
+  .porque-kontadores, .contact-section, .servicios, .comments-section {
+    background-color: #EEEEEE !important;
+  }
+
 .navbar {
    height: 80px;
 }
@@ -130,7 +135,6 @@ html, body {
 /* === Seção ¿Quiénes somos? === */
 
 .quienes-somos-section {
-    background-color: #f8f9fa; /* Fundo branco/cinza claro da seção */
     padding-top: 5rem; /* py-5 do Bootstrap */
     padding-bottom: 5rem; /* py-5 do Bootstrap */
     position: relative; /* Essencial para posicionar as imagens flutuantes dentro desta seção */
@@ -502,7 +506,7 @@ html, body {
     height: auto;
   }
 
-  .servicios {
+  .container-servicios {
     max-width: 900px;
     margin: auto;
     padding: 60px 20px;
@@ -755,6 +759,218 @@ html, body {
   .carousel-dots .dot.active {
     background-color: white;
   }
+
+  /*Comentarios */
+
+.comments-section .carousel-control-prev,
+.comments-section .carousel-control-next {
+    width: 5%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.comments-section .carousel-control-prev:hover,
+.comments-section .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.comments-section .carousel-control-prev-icon,
+.comments-section .carousel-control-next-icon {
+    background-color: #6c757d; 
+    border-radius: 50%;
+    padding: 12px;
+    background-size: 50%;
+}
+
+.comments-section .carousel-indicators {
+    bottom: -40px;
+    margin-bottom: 0;
+}
+
+.comments-section .carousel-indicators button {
+    background-color: #adb5bd;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.8;
+}
+
+.comments-section .carousel-indicators button.active {
+    background-color: #495057;
+    opacity: 1;
+}
+
+/*Nuestro time */
+
+.team-section{
+  background-color: #EEEEEE;
+}
+.team-section .carousel-control-prev,
+.team-section .carousel-control-next {
+    width: 5%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.team-section .carousel-control-prev:hover,
+.team-section .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.team-section .carousel-control-prev-icon,
+.team-section .carousel-control-next-icon {
+    background-color: #6c757d;
+    border-radius: 50%;
+    padding: 12px;
+    background-size: 50%;
+}
+
+/* Estilos para os indicadores do carrossel de membros */
+.team-section .carousel-indicators {
+    bottom: -40px;
+    margin-bottom: 0;
+}
+
+.team-section .carousel-indicators button {
+    background-color: #adb5bd;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.8;
+}
+
+.team-section .carousel-indicators button.active {
+    background-color: #495057;
+    opacity: 1;
+}
+
+
+/*Form contato */
+/* ... seu CSS existente para section-title, section-subtitle, comments-section, team-section etc. ... */
+
+/* Seção Contáctanos */
+.contact-section {
+    background-color: #f8f9fa;
+}
+
+.contact-content {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-image-half {
+     background-image: url('./img/image-form.jpg'); /* Exemplo de imagem */
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /* Garante que a div tenha uma altura para a imagem aparecer */
+    position: relative;
+}
+
+.contact-image-half::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.contact-image-half .image-overlay {
+    position: relative;
+    z-index: 2;
+    width: 630px;
+    text-align: center;
+}
+
+/* ESTILOS EXCLUSIVOS PARA O FORMULÁRIO */
+.contact-form-half {
+    background: linear-gradient(to bottom right, #4a00e0, #8e2de2);
+    color: #fff;
+}
+
+.contact-custom-form .contact-form-label { /* Usando a nova classe exclusiva */
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact-custom-form .contact-form-control { /* Usando a nova classe exclusiva */
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    /* Certifica que o input ocupe a largura total */
+    width: 100%;
+    display: block; /* Garante que se comporte como um bloco */
+}
+
+/* Estilo do placeholder com a nova classe */
+.contact-custom-form .contact-form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilo do input ao focar com a nova classe */
+.contact-custom-form .contact-form-control:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #fff;
+    /* Ajustando o box-shadow para ser mais exclusivo se necessário, ou manter padrão */
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25); 
+    color: #fff;
+    outline: none; /* Remove o outline padrão do navegador */
+}
+
+.contact-custom-form textarea.contact-form-control { /* Específico para o textarea */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+
+.contact-custom-form .contact-submit-btn { /* Usando a nova classe exclusiva */
+    background-color: #fff;
+    border-color: #fff;
+    color: #4a00e0;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%; /* Ocupa 100% da largura */
+    margin-top: 1rem; /* Espaçamento superior */
+    transition: all 0.3s ease; /* Transição para o hover */
+}
+
+.contact-custom-form .contact-submit-btn:hover {
+    background-color: #e2e6ea;
+    border-color: #e2e6ea;
+    color: #4a00e0;
+}
+
+
+/* Responsividade básica para o layout do formulário */
+@media (max-width: 767.98px) {
+    .contact-image-half {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    }
+    .contact-form-half {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+}
+
+/* Responsividade básica para o layout do formulário */
+@media (max-width: 767.98px) {
+    .contact-image-half {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px; /* Arredonda no canto superior direito para mobiles */
+    }
+    .contact-form-half {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px; /* Arredonda no canto inferior esquerdo para mobiles */
+    }
+}
 
   /* Importar Font Awesome para ícones sociais */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
