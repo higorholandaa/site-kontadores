@@ -889,7 +889,7 @@ html, body {
 
 /* ESTILOS EXCLUSIVOS PARA O FORMULÁRIO */
 .contact-form-half {
-    background: linear-gradient(to bottom right, #4a00e0, #8e2de2);
+    background-color: #4761F7;
     color: #fff;
 }
 
