@@ -459,6 +459,11 @@ html, body {
     flex-wrap: wrap;
     gap: 40px;
   }
+
+  .container-porque{
+    display: flex;
+    flex-direction: column;
+  }
   
   .text-content {
     flex: 1 1 500px;
@@ -484,7 +489,6 @@ html, body {
     margin-bottom: 20px;
     font-size: 16px;
     color: #555;
-    display: flex;
     align-items: flex-start;
   }
   
@@ -510,6 +514,10 @@ html, body {
     max-width: 900px;
     margin: auto;
     padding: 60px 20px;
+  }
+
+  .check-servicios{
+    width: 25px;
   }
   
   .titulo-central {
@@ -806,6 +814,11 @@ html, body {
 .team-section{
   background-color: #EEEEEE;
 }
+
+.team-info-card{
+  background-color: #4761F7;
+  border-radius: 12px;
+}
 .team-section .carousel-control-prev,
 .team-section .carousel-control-next {
     width: 5%;
@@ -945,6 +958,10 @@ html, body {
     background-color: #e2e6ea;
     border-color: #e2e6ea;
     color: #4a00e0;
+}
+
+.contact-custom-form{
+  padding: 100px;
 }
 
 
