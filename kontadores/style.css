@@ -818,7 +818,27 @@ html, body {
 .team-info-card{
   background-color: #4761F7;
   border-radius: 12px;
+  height: 100%;
+  position: relative;
 }
+
+.team-info-card p, .team-info-card ul > li > a {
+  color: #fff;
+  font-weight: 400;
+}
+
+.list-send{
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.list-send-stars{
+    right: 0%;
+    top: 72%;
+    position: absolute;
+    z-index: 2;
+}
+
 .team-section .carousel-control-prev,
 .team-section .carousel-control-next {
     width: 5%;
