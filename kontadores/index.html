@@ -404,168 +404,104 @@
         </div>
     </section>
 
-    <section class="comments-section py-5">
-        <div class="container">
-            <div>
-                <h2 class="text-center mb-5 section-title">Comentarios</h2>
-                <p class="text-center text-muted mb-5 section-subtitle">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing
-                    elit.
-                    Suspendisse viverra orci ut nulla. Fusce sit amet mi vel erat pulvinar. </p>
+    <section class="testimonial-section">
+        <h2 class="testimonial-title">Comentarios</h2>
+        <p class="testimonial-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis et nisi non pharetra.
+            Nulla id tempus metus. Suspendisse malesuada eu dolor in scelerisque.
+        </p>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center gap-4 flex-wrap">
+                        <div class="testimonial-card col-10 col-md-3">
+                            <div class="quote-icon">
+                                <img src="./img/quote.png" class="quote-img" />
+                            </div>
+                            <div class="testimonial-name">Katherine Morrison</div>
+                            <div class="testimonial-stars">★★★★★ <span class="text-muted">· 2 anõs</span></div>
+                            <div class="testimonial-text">
+                                Excelente servicio! Los recomiendo al 1000%. El cliente en Uruguay puntualísimo y muy
+                                atentos en ayudar. ¡Muchas gracias!
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card col-10 col-md-3">
+                            <div class="quote-icon">
+                                <img src="./img/quote.png" class="quote-img" />
+                            </div>
+                            <div class="testimonial-name">Genesis Candanedo</div>
+                            <div class="testimonial-stars">★★★★★ <span class="text-muted">· 3 anõs</span></div>
+                            <div class="testimonial-text">
+                                Muy buena atención, excelente profesionalismo. Te ayudan en cada paso del proceso con
+                                rapidez, siempre consiguiendo la solución adecuada.
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card col-10 col-md-3">
+                            <div class="quote-icon">
+                                <img src="./img/quote.png" class="quote-img" />
+                            </div>
+                            <div class="testimonial-name">Aimee Seefeldt</div>
+                            <div class="testimonial-stars">★★★★★ <span class="text-muted">· 6 meses</span></div>
+                            <div class="testimonial-text">
+                                Desde que empecé a asesorarme con ellos, WAO. Me enseñaron mucho de organización
+                                financiera
+                                y fueron súper profesionales. ¡¡Recomendado!!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center gap-4 flex-wrap">
+                        <div class="testimonial-card col-10 col-md-3">
+                            <div class="quote-icon">
+                                <img src="./img/quote.png" class="quote-img" />
+                            </div>
+                            <div class="testimonial-name">Edgar Wong</div>
+                            <div class="testimonial-stars">★★★★☆ <span class="text-muted">· 9 reviews</span></div>
+                            <div class="testimonial-text">
+                                El tiempo de respuesta fue bueno. Me ayudaron con una consulta tributaria específica y
+                                resolvieron con claridad.
+                            </div>
+                        </div>
+                        <div class="testimonial-card col-10 col-md-3">
+                            <div class="quote-icon">
+                                <img src="./img/quote.png" class="quote-img" />
+                            </div>
+                            <div class="testimonial-name">Edgar Wong</div>
+                            <div class="testimonial-stars">★★★★☆ <span class="text-muted">· 9 reviews</span></div>
+                            <div class="testimonial-text">
+                                El tiempo de respuesta fue bueno. Me ayudaron con una consulta tributaria específica y
+                                resolvieron con claridad.
+                            </div>
+                        </div>
+                        <div class="testimonial-card col-10 col-md-3">
+                            <div class="quote-icon">
+                                <img src="./img/quote.png" class="quote-img" />
+                            </div>
+                            <div class="testimonial-name">Edgar Wong</div>
+                            <div class="testimonial-stars">★★★★☆ <span class="text-muted">· 9 reviews</span></div>
+                            <div class="testimonial-text">
+                                El tiempo de respuesta fue bueno. Me ayudaron con una consulta tributaria específica y
+                                resolvieron con claridad.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div id="commentsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center g-4">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="comment-card p-4">
-                                    <img src="https://placehold.co/150x150"" alt=" Foto do Cliente"
-                                        class="rounded-circle mb-3">
-                                    <div class="rating mb-3">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                    </div>
-                                    <p class="comment-text mb-3">"Excelente serviço! Profissionais muito competentes e
-                                        atenciosos. Recomendo a todos!"</p>
-                                    <h5 class="commenter-name">Katharina Müller Dias</h5>
-                                    <p class="commenter-role text-muted">Web Developer</p>
-                                    <div class="quote-icon position-absolute top-0 end-0 m-3">
-                                        <i class="bi bi-quote fs-1"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="comment-card p-4">
-                                    <img src="https://placehold.co/150x150"" alt=" Foto do Cliente"
-                                        class="rounded-circle mb-3">
-                                    <div class="rating mb-3">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                    </div>
-                                    <p class="comment-text mb-3">"Atendimento impecável e soluções eficazes. A equipe
-                                        superou minhas expectativas, muito obrigado!"</p>
-                                    <h5 class="commenter-name">Frederick Frankenstein</h5>
-                                    <p class="commenter-role text-muted">UX Designer</p>
-                                    <div class="quote-icon position-absolute top-0 end-0 m-3">
-                                        <i class="bi bi-quote fs-1"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="comment-card p-4">
-                                    <img src="https://placehold.co/150x150"" alt=" Foto do Cliente"
-                                        class="rounded-circle mb-3">
-                                    <div class="rating mb-3">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                    </div>
-                                    <p class="comment-text mb-3">"Profissionalismo e dedicação. Meu projeto foi entregue
-                                        com
-                                        maestria e pontualidade, estou muito satisfeito."</p>
-                                    <h5 class="commenter-name">Adrian Santos</h5>
-                                    <p class="commenter-role text-muted">Data Analyst</p>
-                                    <div class="quote-icon position-absolute top-0 end-0 m-3">
-                                        <i class="bi bi-quote fs-1"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="row justify-content-center g-4">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="comment-card p-4">
-                                    <img src="https://placehold.co/150x150"" alt=" Foto do Cliente"
-                                        class="rounded-circle mb-3">
-                                    <div class="rating mb-3">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                    </div>
-                                    <p class="comment-text mb-3">"A melhor experiência que tive! Suporte ágil e soluções
-                                        que
-                                        realmente fazem a diferença para o meu negócio."</p>
-                                    <h5 class="commenter-name">Maria Silva</h5>
-                                    <p class="commenter-role text-muted">Empreendedora</p>
-                                    <div class="quote-icon position-absolute top-0 end-0 m-3">
-                                        <i class="bi bi-quote fs-1"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="comment-card p-4">
-                                    <img src="https://placehold.co/150x150"" alt=" Foto do Cliente"
-                                        class="rounded-circle mb-3">
-                                    <div class="rating mb-3">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                    </div>
-                                    <p class="comment-text mb-3">"Serviços de alta qualidade e um time que realmente se
-                                        importa com o cliente. Altamente recomendado!"</p>
-                                    <h5 class="commenter-name">João Pereira</h5>
-                                    <p class="commenter-role text-muted">Consultor</p>
-                                    <div class="quote-icon position-absolute top-0 end-0 m-3">
-                                        <i class="bi bi-quote fs-1"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="comment-card p-4">
-                                    <img src="https://placehold.co/150x150"" alt=" Foto do Cliente"
-                                        class="rounded-circle mb-3">
-                                    <div class="rating mb-3">
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                    </div>
-                                    <p class="comment-text mb-3">"Profissionais dedicados e resultados surpreendentes. A
-                                        equipe é fantástica, parabéns pelo trabalho!"</p>
-                                    <h5 class="commenter-name">Ana Costa</h5>
-                                    <p class="commenter-role text-muted">Gerente de Projetos</p>
-                                    <div class="quote-icon position-absolute top-0 end-0 m-3">
-                                        <i class="bi bi-quote fs-1"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#commentsCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#commentsCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#commentsCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#commentsCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                </div>
+            <!-- Indicadores -->
+            <div class="carousel-indicators mt-4">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
             </div>
         </div>
     </section>
