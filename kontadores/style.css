@@ -820,6 +820,7 @@ html, body {
     }
 
     .testimonial-name {
+      font-size: 1.2rem;
       font-weight: 600;
       margin-bottom: 4px;
     }
@@ -836,6 +837,11 @@ html, body {
     }
 
     .carousel-indicators [data-bs-target] {
+      margin-top: 10px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: none;
       background-color: #d0d0d0;
     }
 

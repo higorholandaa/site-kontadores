@@ -497,7 +497,7 @@
             </div>
 
             <!-- Indicadores -->
-            <div class="carousel-indicators mt-4">
+            <div class="carousel-indicators mt-5">
                 <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
@@ -758,21 +758,6 @@
     const track = document.querySelector('.carousel-track-client');
     const dots = document.querySelectorAll('.carousel-dots .dot');
     let currentSlide = 0;
-
-    // function showSlide(index) {
-    //     const slideWidth = track.clientWidth;
-    //     track.style.transform = `translateX(-${index * slideWidth}px)`;
-    //     dots.forEach(dot => dot.classList.remove('active'));
-    //     dots[index].classList.add('active');
-    //     currentSlide = index;
-    // }
-
-    // dots.forEach((dot, index) => {
-    //     dot.addEventListener('click', () => showSlide(index));
-    // });
-
-    // window.addEventListener('resize', () => showSlide(currentSlide));
-
 
     const swiperClients = new Swiper('.clients-swiper', {
         slidesPerView: 'auto',
