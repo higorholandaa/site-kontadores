@@ -949,7 +949,6 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -976,13 +975,10 @@ html, body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
     padding: 10px 15px;
-    border-radius: 8px;
-    /* Certifica que o input ocupe a largura total */
     width: 100%;
-    display: block; /* Garante que se comporte como um bloco */
+    display: block;
 }
 
-/* Estilo do placeholder com a nova classe */
 .contact-custom-form .contact-form-control::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -991,10 +987,9 @@ html, body {
 .contact-custom-form .contact-form-control:focus {
     background-color: rgba(255, 255, 255, 0.25);
     border-color: #fff;
-    /* Ajustando o box-shadow para ser mais exclusivo se necessário, ou manter padrão */
     box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25); 
     color: #fff;
-    outline: none; /* Remove o outline padrão do navegador */
+    outline: none;
 }
 
 .contact-custom-form textarea.contact-form-control { /* Específico para o textarea */
@@ -1005,7 +1000,7 @@ html, body {
 .contact-custom-form .contact-submit-btn { /* Usando a nova classe exclusiva */
     background-color: #fff;
     border-color: #fff;
-    color: #4a00e0;
+    color: #4761F7;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 8px;
