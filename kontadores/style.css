@@ -511,9 +511,19 @@ html, body {
   }
 
   .container-servicios {
+    position: relative;
+    z-index: 2;
     max-width: 900px;
     margin: auto;
     padding: 60px 20px;
+  }
+
+  .apps-servicios{
+    position: absolute;
+    z-index: -1;
+    max-height: 420px;
+    margin-top: -225px;
+    right: -210px;
   }
 
   .check-servicios{
@@ -699,6 +709,8 @@ html, body {
   }
 
   .clientes-section {
+    position: relative;
+    z-index: 2;
     background-color: #3f51f5;
     color: white;
     text-align: center;
@@ -853,6 +865,29 @@ html, body {
 
 .team-section{
   background-color: #EEEEEE;
+}
+
+.rectangle-nuestro-equipo{
+    max-height: 470px;
+    margin-top: 118px;
+    left: 50px;
+    position: absolute;
+    z-index: 0;
+}
+
+.img-nuestro-equipo{
+
+  position: relative;
+}
+
+.team-section .section-subtitle{
+  max-width: 72%;
+}
+
+.circles-nuestro-equipo{
+  right: 13px;
+  position: absolute;
+  z-index: 0;
 }
 
 .team-info-card{
