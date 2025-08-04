@@ -222,12 +222,32 @@ html, body {
     transform: translate(-40%, -50%);
 }
 
+.decor-shape-top-left-icon {
+    z-index: 2;
+    position: absolute;
+    top: 70%;
+    left: 9%;
+    width: 46px;
+    height: auto;
+    transform: translate(-56%, -50%);
+}
+
 .decor-rectangle-bottom-left{
     top: 94%;
     right: 8%;
     width: 115px;
     height: auto;
     transform: translate(30%, -30%);
+    position: absolute;
+    z-index: 2;
+}
+
+.decor-rectangle-bottom-left-icon{
+    top: 94%;
+    right: 9%;
+    width: 63px;
+    height: auto;
+    transform: translate(36%, -16%);
     position: absolute;
     z-index: 2;
 }
