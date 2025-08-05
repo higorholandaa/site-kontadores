@@ -66,71 +66,118 @@ html, body {
 
 
 /* === Hero Section Custom Styles === */
-
 .hero-section {
-    background-color: #f8f9fa;
-    /* bg-light do Bootstrap */
-    padding: 4rem 0;
-    padding-bottom: 0;
+  background-color: #f8f9fa;
+  padding: 4rem 0 0;
 }
 
 .hero-section h1 {
-    font-size: 4.5rem;
-    font-weight: 400;
-    line-height: 1;
-    color: #4D4D4D;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #4d4d4d;
 }
 
 .hero-section h1 .text-primary {
-    color: #3A48F6 !important;
-    font-weight: 500;
+  color: #3a48f6 !important;
+  font-weight: 500;
 }
 
 .hero-section p {
-    color: #717171;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    font-weight: 350 !important;
+  color: #717171;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-weight: 350 !important;
 }
 
 .hero-section .btn-gradient {
-    background: linear-gradient(to right, #01124E, #F6C2F2);
-    border: none;
-    border-radius: 20px;
-    color: white;
-    padding: 0.6rem 1.5rem;
-    transition: all 0.3s ease;
+  background: linear-gradient(to right, #01124e, #f6c2f2);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .hero-section .btn-gradient:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .hero-section .img-decor {
-    position: absolute;
-    top: 29%;
-    left: 43px;
-    z-index: 1;
-    width: 121px;
+  position: absolute;
+  top: 20%;
+  left: 15px;
+  z-index: 1;
+  width: 100px;
 }
 
 .hero-section .btn-whatsapp {
-    position: absolute;
-    bottom: 53px;
-    right: 18px;
-    z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  z-index: 2;
 }
 
-.hero-section .img-whatsapp{
-  max-width: 84px;
-  max-height: 84px;
+.hero-section .img-whatsapp {
+  max-width: 64px;
+  max-height: 64px;
 }
 
 .hero-section img.main-img {
-    width: 90%;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 90%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 0;
 }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .hero-section .img-decor {
+    top: 10%;
+    left: 10px;
+    width: 70px;
+  }
+
+  .hero-section .btn-whatsapp {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .hero-section .img-whatsapp {
+    max-width: 52px;
+    max-height: 52px;
+  }
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 2rem 0;
+}
+
+.benefit .icon {
+  margin-bottom: 0.5rem;
+}
+
+.benefit h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.benefit p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
 
 /* === Seção ¿Quiénes somos? === */
 
@@ -436,6 +483,7 @@ html, body {
     padding: 30px 5rem;
     color: white;
   }
+  
   
   .benefit {
     flex: 1;
@@ -1085,6 +1133,14 @@ html, body {
         border-top-right-radius: 0;
         border-bottom-left-radius: 15px;
     }
+
+    .benefits-section{
+      flex-direction: column;
+    }
+
+    .apps-servicios{
+      display: none;
+    }
 }
 
 /* Responsividade básica para o layout do formulário */
@@ -1115,6 +1171,7 @@ html, body {
   justify-content: space-between;
   padding: 55px 60px;
   position: relative;
+  gap: 30px;
 }
 
 .footer-left {
@@ -1180,7 +1237,7 @@ html, body {
   position: absolute;
   right: 40px;
   bottom: 20px;
-background: linear-gradient(89.8deg, #01124E -62.59%, #4761F7 14.25%, #F6C2F2 99.82%);
+  background: linear-gradient(89.8deg, #01124E -62.59%, #4761F7 14.25%, #F6C2F2 99.82%);
   color: white;
   padding: 5px 16px;
   border-radius: 14px;
@@ -1198,7 +1255,37 @@ background: linear-gradient(89.8deg, #01124E -62.59%, #4761F7 14.25%, #F6C2F2 99
   font-weight: 600;
 }
 
-  
-  
-  
-  
+/* === Responsivo === */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .back-to-top {
+    position: static;
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: start;
+    gap: 25px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    padding: 15px 10px;
+  }
+}
