@@ -20,12 +20,12 @@
                 <img src="img/LogotipoKontadores07.png" alt="Logo">
             </a>
 
-            <!-- Botão colapsável (mobile) -->
+            <!-- Botão mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu principal -->
+            <!-- Conteúdo do menu -->
             <div class="collapse navbar-collapse" id="navbarContent">
                 <!-- Links -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -47,16 +47,22 @@
                 </ul>
 
                 <!-- Botões -->
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center gap-2 flex-column flex-lg-row mt-3 mt-lg-0">
                     <a href="#" class="btn btn-gradient">Contáctanos</a>
-                    <a href="#" class="btn btn-language d-flex align-items-center">
-                        Español <img src="https://flagcdn.com/es.svg" alt="ES">
-                    </a>
+
+                    <!-- Select de idioma -->
+                    <div class="language-select position-relative">
+                        <select class="form-select btn-language" onchange="changeFlag(this)">
+                            <option value="es" selected data-flag="https://flagcdn.com/es.svg">Español</option>
+                            <option value="en" data-flag="https://flagcdn.com/gb.svg">English</option>
+                            <option value="pt" data-flag="https://flagcdn.com/br.svg">Português</option>
+                        </select>
+                        <img id="lang-flag" src="https://flagcdn.com/es.svg" alt="flag" class="flag-img" />
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-
 
     <section class="hero-section">
         <div class="container">
@@ -778,6 +784,12 @@
             item.classList.toggle('open');
         });
     });
+
+    function changeFlag(select) {
+        const selected = select.options[select.selectedIndex];
+        const flagUrl = selected.getAttribute('data-flag');
+        document.getElementById('lang-flag').src = flagUrl;
+    }
 
     const track = document.querySelector('.carousel-track-client');
     const dots = document.querySelectorAll('.carousel-dots .dot');
