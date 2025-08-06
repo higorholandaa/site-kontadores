@@ -1138,7 +1138,14 @@ html, body {
       flex-direction: column;
     }
 
-    .apps-servicios{
+    .apps-servicios,
+    .decor-circle-top-right,
+    .decor-arrow-top-right,
+    .decor-shape-bottom-left,
+    .decor-shape-top-left,
+    .decor-shape-top-left-icon,
+    .decor-rectangle-bottom-left,
+    .decor-rectangle-bottom-left-icon{
       display: none;
     }
 }
