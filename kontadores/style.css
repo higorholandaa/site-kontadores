@@ -1390,8 +1390,18 @@ opacity: 0.9;
   .team-section .section-subtitle{
     max-width: 100%;
   }
-}
 
+  .navbar-collapse {
+    background: white;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 110px;
+    z-index: 999;
+    position: fixed;
+    padding: 15px;
+}
+}
 
 .member-photo{
   border: solid 1px #4761F7;
