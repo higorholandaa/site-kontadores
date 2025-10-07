@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontadores</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="espanish">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white my-2">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center text-primary fw-bold" href="#">
+                    <img src="img/LogotipoKontadores07.png" alt="Logo">
+                </a>
+
+                <!-- Botão colapsável (mobile) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu principal -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobreNosotros">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#clientes">Clients & Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nuestroEquipo">Our team</a></li>
+                    </ul>
+
+                    <!-- Buttons -->
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="#contacto" class="btn btn-gradient">Contact us</a>
+                        <div class="language-select position-relative">
+                            <select class="form-select btn-language" onchange="changeFlag(this)">
+                                <option value="es" data-flag="https://flagcdn.com/es.svg">Español</option>
+                                <option value="en" selected data-flag="https://flagcdn.com/gb.svg">English</option>
+                            </select>
+                            <img id="lang-flag" src="https://flagcdn.com/gb.svg" alt="flag" class="flag-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-section" id="inicio">
+            <div class="container">
+                <div class="row align-items-center flex-column-reverse flex-md-row text-center text-md-start">
+                    <!-- Texto à esquerda -->
+                    <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center flex-column">
+                        <h1>
+                            We transform <br />
+                            numbers into <span class="text-primary">opportunities</span>
+                        </h1>
+                        <p>
+                            We are a firm of Certified Public Accountants<br> and consultants in Panama.
+                        </p>
+                        <a href="#contacto" class="btn btn-gradient-home mt-3">
+                            Request a consultation
+                        </a>
+                    </div>
+                    <!-- Imagem à direita -->
+                    <div class="col-md-6 position-relative">
+                        <!-- Imagem principal -->
+                        <img src="img/notebook-home.png" alt="Notebook" class="img-fluid main-img" />
+
+                        <!-- Forma verde decorativa -->
+                        <img src="img/StickersForma0104.png" alt="Decor" class="img-decor" />
+
+                        <!-- Botão WhatsApp -->
+                        <a href="https://web.whatsapp.com/send?phone=5076626-2822&text=" target="_blank"
+                            class="btn-whatsapp">
+                            <img class="img-whatsapp" src="img/btn-whatsapp.png" alt="WhatsApp" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefícios -->
+            <div class="benefits-section mt-5">
+                <div class="row text-center">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="benefit">
+                            <div class="icon">
+                                <img src="img/stars.svg" />
+                            </div>
+                            <h3>Fast Results</h3>
+                            <p>Trust in our processes and quality of work.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="benefit">
+                            <div class="icon">
+                                <img src="img/stars.svg" />
+                            </div>
+                            <h3>Personalized Attention</h3>
+                            <p>We have a team of professionals available 24/7.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="benefit">
+                            <div class="icon">
+                                <img src="img/stars.svg" />
+                            </div>
+                            <h3>Business Ideas</h3>
+                            <p>We provide consulting in any type of area.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="benefit">
+                            <div class="icon">
+                                <img src="img/stars.svg" />
+                            </div>
+                            <h3>Quality Work</h3>
+                            <p>Our track record places us among the best official sources of financial analysis.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="quienes-somos-section py-5" id="sobreNosotros">
+            <img src="img/circle.png" alt="Elemento decorativo superior direito" class="decor-circle-top-right">
+            <img src="img/arrow.png" alt="Elemento decorativo superior direito" class="decor-arrow-top-right">
+            <img src="img/dot-rectangle.png" alt="Elemento decorativo inferior esquerdo"
+                class="decor-shape-bottom-left">
+            <img src="img/rectangle.png" alt="Elemento decorativo superior esquerdo" class="decor-shape-top-left">
+            <img src="img/trophy.png" alt="Elemento decorativo superior esquerdo" class="decor-shape-top-left-icon">
+            <img src="img/rectangle.png" alt="Elemento decorativo superior esquerdo"
+                class="decor-rectangle-bottom-left">
+            <img src="img/lightning.png" alt="Elemento decorativo superior esquerdo"
+                class="decor-rectangle-bottom-left-icon">
+
+
+            <a href="#"><img class="img-arrow-double mb-5" src="img/doubleDown.png" /></a>
+            <div class="container text-center">
+                <!-- Title -->
+                <h2 class="fw-bold mb-3">
+                    Who <span class="text-primary">are we?</span>
+                </h2>
+                <p class="mx-5">
+                    At Kontadores, we do more than accounting. We are a firm of Certified Public Accountants in Panama
+                    that combines experience and a young vision to help you gain clarity over your numbers,
+                    make better decisions, and take your business to the next level.
+                </p>
+
+                <!-- Team image -->
+                <div class="position-relative">
+                    <img src="img/equipo-kontadores.png" alt="Kontadores Team"
+                        class="img-fluid rounded shadow-lg img-equipo">
+                </div>
+
+                <!-- Bottom block with 2 columns -->
+                <div class="mision-vision-section">
+                    <div class="container">
+                        <div class="stats-box">
+                            <div class="stat">
+                                <h3>+158</h3>
+                                <p>Completed projects</p>
+                            </div>
+                            <div class="stat">
+                                <h3>+287</h3>
+                                <p>Satisfied clients</p>
+                            </div>
+                            <div class="stat">
+                                <h3>+4K</h3>
+                                <p>Hours of work</p>
+                            </div>
+                            <div class="stat">
+                                <h3>+10K</h3>
+                                <p>Documents</p>
+                            </div>
+                        </div>
+
+                        <div class="mission-box">
+                            <div class="mission">
+                                <div class="icon">
+                                    <img src="img/champion.png" alt="champion" width="35">
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <p>
+                                        <strong>Our mission:</strong>
+                                        To support your growth with <strong>financial peace of mind</strong>, providing
+                                        you with
+                                        the organization, strategy, and clarity
+                                        every business needs to move forward.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vision">
+                                <div class="icon">
+                                    <img src="img/eye.png" alt="eye" width="35">
+                                </div>
+                                <div>
+                                    <p>
+                                        <strong>Our vision:</strong>
+                                        To transform accounting into a tool of empowerment for entrepreneurs
+                                        and business owners in
+                                        <strong>Panama and all of Latin America</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="porque-kontadores">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="text-content container container-porque">
+                            <h2>Why <span class="highlight">Kontadores</span>?</h2>
+                            <ul>
+                                <li>
+                                    <span class="check"><img src="./img/check_service.png"
+                                            class="check-servicios"></span>
+                                    <strong>We speak your language</strong>: no jargon, no confusion.
+                                </li>
+                                <li>
+                                    <span class="check"><img src="./img/check_service.png"
+                                            class="check-servicios"></span>
+                                    <strong>We go further</strong>: We are integrating artificial intelligence into
+                                    our accounting processes, which allows us to provide you with greater speed,
+                                    accuracy, and efficiency in every delivery.
+                                </li>
+                                <li>
+                                    <span class="check"><img src="./img/check_service.png"
+                                            class="check-servicios"></span>
+                                    <strong>We are digital</strong>: Our clients share all their documents
+                                    online — from invoices and spreadsheets to forms and bank reports. You receive
+                                    your reports and filings without leaving your business.
+                                </li>
+                                <li>
+                                    <span class="check"><img src="./img/check_service.png"
+                                            class="check-servicios"></span>
+                                    <strong>More than accountants</strong>: we are your strategic partner.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-12 d-flex justify-content-end">
+                        <div class="image-content">
+                            <img src="img/Element.png" alt="Gráfico ilustrativo Kontadores" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicios" id="servicios">
+            <div class="container-servicios">
+                <div class="circulo rotacionado">
+                    <img src="img/lightning.png" alt="lightning">
+                </div>
+                <div class="titulo-central">
+                    <h2>Services</h2>
+                    <p>
+                        Clear and simple accounting: we manage your numbers without complications.
+                        Efficient processes: we leverage artificial intelligence for greater speed and accuracy.
+                        Fully digital: send and receive your documents and reports online.
+                        Your strategic partner: we don’t just handle your accounting, we support your business
+                        decisions.
+                    </p>
+                </div>
+
+                <div class="accordion">
+                    <!-- Acordeon 1 - aberto por padrão -->
+                    <div class="accordion-item open">
+                        <div class="accordion-header">
+                            <div class="accordion-text-content">
+                                <h3>Accounting and Tax Services</h3>
+                                <p>We keep your accounting up to date and help you comply with all your tax obligations.
+                                </p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Monthly or periodic
+                                    accounting;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Accounting records and
+                                    bank reconciliations;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Annual tax closing;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Filing of VAT,
+                                    withholdings, dividends;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Income certifications
+                                    and other financial reports;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Advisory on your
+                                    business’s accounting structure;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Preparation of digital
+                                    accounting books.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-content">
+                                <h3>Income Tax and Municipal Declarations</h3>
+                                <p>We help you prepare and file your income tax returns and municipal contributions
+                                    correctly and on time.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Tax return advisory;
+                                </li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Review of deductions and
+                                    tax credits;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Online filing with the
+                                    corresponding municipality.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Payroll and Labor Management</h3>
+                                <p>We manage your company’s payroll and ensure compliance with all labor and social
+                                    security obligations.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Preparation of monthly
+                                    payrolls;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Payment of social
+                                    benefits and allowances;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Management of employee
+                                    contracts and insurance.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Company Incorporation and Formalization</h3>
+                                <p>We guide you through the entire process of creating your company, from planning to
+                                    legal formalization.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Legal registration of
+                                    the company;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Obtaining licenses and
+                                    permits;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Advisory on corporate
+                                    structure and bylaws.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Tax Refunds</h3>
+                                <p>We manage tax refunds efficiently, ensuring that you receive the amount you are
+                                    entitled to.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Review of overpayments;
+                                </li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Procedures before the
+                                    tax authority;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Preparation of required
+                                    documentation.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>External Audits</h3>
+                                <p>We conduct external audits to assess the financial situation and ensure your
+                                    company’s transparency.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Annual financial audit;
+                                </li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Evaluation of internal
+                                    processes;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Detailed report with
+                                    recommendations.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Other Procedures</h3>
+                                <p>We assist you with various administrative and legal procedures your business may
+                                    need.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Renewal of licenses and
+                                    permits;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Procedures before public
+                                    entities;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Management of additional
+                                    legal documents.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Other Special Services</h3>
+                                <p>We offer personalized services tailored to the unique needs of your company.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Strategic consulting;
+                                </li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Implementation of
+                                    accounting software;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Financial training and
+                                    support.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <img src="./img/Apps.png" class="apps-servicios" />
+            </div>
+        </section>
+
+        <section class="clientes-section" id="clientes">
+            <div class="clientes-texto">
+                <h1><strong>Clients</strong></h1>
+                <p class="text-center">
+                    Companies that trust us for clear, fast, and accurate accounting.
+                    Your business, our priority.
+                </p>
+            </div>
+
+            <!-- <div class="carousel-container">
+            <div class="carousel-track-client">
+                <img src="img/alimenticias.png" alt="Cliente 1" />
+                <img src="img/gris.png" alt="Cliente 2" />
+                <img src="img/optilux.png" alt="Cliente 3" />
+                <img src="img/panama.png" alt="Cliente 4" />
+                <img src="img/services.png" alt="Cliente 5" />
+                <img src="img/traced.png" alt="Cliente 6" />
+                <img src="img/topex.png" alt="Cliente 1" />
+            </div>
+            <div class="carousel-dots">-
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div> -->
+            <div class="swiper clients-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/alimenticias.png" alt="Cliente 1" /></div>
+                    <div class="swiper-slide"><img src="img/gris.png" alt="Cliente 2" /></div>
+                    <div class="swiper-slide"><img src="img/optilux.png" alt="Cliente 3" /></div>
+                    <div class="swiper-slide"><img src="img/panama.png" alt="Cliente 4" /></div>
+                    <div class="swiper-slide"><img src="img/services.png" alt="Cliente 5" /></div>
+                    <div class="swiper-slide"><img src="img/traced.png" alt="Cliente 6" /></div>
+                    <div class="swiper-slide"><img src="img/topex.png" alt="Cliente 7" /></div>
+
+                    <div class="swiper-slide"><img src="img/alimenticias.png" alt="Cliente 1" /></div>
+                    <div class="swiper-slide"><img src="img/gris.png" alt="Cliente 2" /></div>
+                    <div class="swiper-slide"><img src="img/optilux.png" alt="Cliente 3" /></div>
+                    <div class="swiper-slide"><img src="img/panama.png" alt="Cliente 4" /></div>
+                    <div class="swiper-slide"><img src="img/services.png" alt="Cliente 5" /></div>
+                    <div class="swiper-slide"><img src="img/traced.png" alt="Cliente 6" /></div>
+                    <div class="swiper-slide"><img src="img/topex.png" alt="Cliente 7" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <h2 class="testimonial-title">Testimonials</h2>
+            <p class="testimonial-subtitle">
+                What our clients say: real experiences that highlight our efficiency, clarity, and commitment.
+                Each testimonial reflects how we help businesses like yours grow with confidence.
+            </p>
+
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Katherine Morrison</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 1 year ago</span></div>
+                                <div class="testimonial-text">
+                                    Excellent service! I recommend them 1000%. The client in Uruguay was extremely
+                                    punctual and
+                                    very attentive in helping. Thank you very much!
+                                </div>
+                            </div>
+
+
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Genesis Candanedo</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 3 years ago</span></div>
+                                <div class="testimonial-text">
+                                    Very good service, excellent professionalism. They help you at every step of the
+                                    process
+                                    quickly, always finding the right solution.
+                                </div>
+                            </div>
+
+
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Aimee Seefeldt</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 1 year ago</span></div>
+                                <div class="testimonial-text">
+                                    Since I started getting advice from them, WOW. They taught me a lot about financial
+                                    organization
+                                    and were super professional. Highly recommended!!
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Osmanli Dimas</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 1 year ago</span></div>
+                                <div class="testimonial-text">
+                                    Thanks to Kontadores for the time and dedication to explain everything to me step by
+                                    step
+                                    and help me improve my finances together with my husband’s.
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Alejandro Ramírez</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 1 year ago</span></div>
+                                <div class="testimonial-text">
+                                    The response time was excellent. They assisted me in a very professional manner and
+                                    resolved my specific tax inquiry with clarity and detail.
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Edgar Wong</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 2 years ago</span></div>
+                                <div class="testimonial-text">
+                                    The response time was good. They helped me with a specific tax inquiry
+                                    and resolved it clearly.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators mt-5">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section py-5" id="nuestroEquipo">
+            <div class="container">
+                <img src="./img/rectangle-large.png" class="rectangle-nuestro-equipo" />
+                <img src="./img/circles-together.png" class="circles-nuestro-equipo" />
+                <h1 class="text-center section-title fw-bold">Our <span class="text-primary">Team</span></h1>
+                <p class="text-center text-muted section-subtitle">
+                    Passionate professionals committed to your success.
+                    Each member of our team combines experience and technology to deliver clear, fast, and efficient
+                    solutions.
+                </p>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-5 col-12">
+                        <div class="team-info-card p-4">
+                            <p>
+                                At <strong>Kontadores</strong>, we work with a multidisciplinary team of professionals
+                                in accounting, taxes, finance, and digital management.
+                            </p>
+                            <p>
+                                We combine technical expertise, continuous updating, and a practical approach so that
+                                you always receive a <strong>service that meets your needs.</strong>
+                            </p>
+                            <p>
+                                Our leadership ensures that <strong>each client receives personalized
+                                    attention</strong>,
+                                technical precision, and clear communication without complications.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.linkedin.com/company/kontadorespa/about/" target="_blank"><img
+                                            src="./img/send.png" class="list-send" />Linkedin</a>
+                                </li>
+                                <li><a href="#"><img src="./img/send.png" class="list-send" />Instagram</a></li>
+                                <li><a href="#"><img src="./img/send.png" class="list-send" />Email</a></li>
+                            </ul>
+                            <img src="./img/star_curt.png" class="list-send-stars" />
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-12">
+                        <div class="team-main-image">
+                            <img src="./img/nuestro-equipo.jpg" alt="Nosso Time Principal"
+                                class="img-fluid rounded shadow-lg img-nuestro-equipo">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="teamMembers" class="row justify-content-center g-4">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/persona-equipo.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/foto-func-1.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/foto-func-2.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/foto-func-3.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/foto-func-4.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="decorative-circles d-none d-lg-block">
+                <span class="circle-sm position-absolute rounded-circle bg-info"></span>
+                <span class="circle-md position-absolute rounded-circle bg-primary"></span>
+                <span class="circle-lg position-absolute rounded-circle bg-secondary"></span>
+            </div>
+            <div class="decorative-dots d-none d-lg-block">
+                <span class="dot position-absolute rounded-circle bg-success"></span>
+                <span class="dot position-absolute rounded-circle bg-warning"></span>
+                <span class="dot position-absolute rounded-circle bg-danger"></span>
+            </div>
+        </section>
+
+        <section class="contact-section py-5" id="contacto">
+            <div class="container">
+                <div>
+                    <h1 class="text-center section-title">Contact Us</h1>
+                    <p class="text-center text-muted mb-5 section-subtitle">
+                        We are here to help you.
+                        Send us your inquiries or documents and our team will respond quickly with clear and efficient
+                        solutions.
+                    </p>
+                </div>
+
+                <div class="contact-content row g-0">
+                    <div
+                        class="col-md-6 contact-image-half d-flex d-none d-sm-block flex-column align-items-center justify-content-end">
+                        <div class="image-overlay text-center pb-4">
+                        </div>
+                    </div>
+                    <div class="col-md-6 contact-form-half">
+                        <div class="caixa">
+                            <img src="img/emotion-smile1.png" alt="smile">
+                        </div>
+                        <form id="contact-form-en" action="https://formspree.io/f/movklgjr" method="POST"
+                            class="contact-custom-form">
+
+                            <div class="text-center">
+                                <p id="form-status-en" style="margin-top:15px; font-weight:bold;"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="name" class="contact-form-label">Name</label>
+                                <input type="text" class="contact-form-control" name="name" placeholder="Your name"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="contact-form-label">Email</label>
+                                <input type="email" class="contact-form-control" name="email"
+                                    placeholder="your@email.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="contact-form-label">Phone</label>
+                                <input type="tel" class="contact-form-control" name="phone"
+                                    placeholder="Your phone number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="contact-form-label">Message (optional)</label>
+                                <textarea class="contact-form-control" name="message" rows="4"
+                                    placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit" class="contact-submit-btn">Send</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content container">
+                <div class="footer-left mb-4">
+                    <div class="logo">
+                        <img src="img/LogotipoKontadores07.png" alt="logo" width="160">
+                        <!-- <span class="logo-icon">K</span>
+                        <span class="logo-text"></span> -->
+                    </div>
+                    <p>Panama City, Panama</p>
+                    <p>kontadoresdigitales@gmail.com</p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://web.whatsapp.com/send?phone=5076626-2822&text=" target="_blank"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/company/kontadorespa/about/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div>
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#sobreNosotros">About Us</a></li>
+                            <li><a href="#nuestroEquipo">Our Team</a></li>
+                            <li><a href="#clientes">Clients & Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Accounting</h4>
+                        <ul>
+                            <li><a href="#servicios">Services</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="#contacto">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Language</h4>
+                        <ul>
+                            <li><a href="index.html">Español</a></li>
+                            <li><a href="index-en.html">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#top" class="back-to-top">⬆</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© Kontadores 2025. All Rights Reserved.<br>Design and Development by: KONTADORES</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <!--Swiper JS via cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+<script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            item.classList.toggle('open');
+        });
+    });
+
+    function changeFlag(select) {
+        const selectedOption = select.options[select.selectedIndex];
+        const lang = selectedOption.value; // "es" ou "en"
+        const flagUrl = selectedOption.getAttribute("data-flag");
+
+        document.getElementById("lang-flag").src = flagUrl;
+
+        if (lang === "es") {
+            window.location.href = "index.html";
+        } else if (lang === "en") {
+            window.location.href = "index-en.html";
+        }
+    }
+
+    const track = document.querySelector('.carousel-track-client');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+    let currentSlide = 0;
+
+    const swiperClients = new Swiper('.clients-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        centeredSlides: false,
+        loop: true,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+        speed: 5000,
+        effect: 'slide',
+        freeMode: {
+            enabled: true,
+            sticky: false,
+        },
+        on: {
+            init: function () {
+                this.el.addEventListener('mouseenter', () => {
+                    this.autoplay.stop();
+                });
+                this.el.addEventListener('mouseleave', () => {
+                    this.autoplay.start();
+                });
+            }
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+            }
+        }
+    });
+
+    const formEn = document.getElementById("contact-form-en");
+    const statusEn = document.getElementById("form-status-en");
+
+    formEn.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const data = new FormData(formEn);
+        try {
+            const response = await fetch(formEn.action, {
+                method: formEn.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            if (response.ok) {
+                statusEn.innerHTML = "Thank you! Your message has been sent successfully.";
+                formEn.reset();
+            } else {
+                statusEn.innerHTML = "⚠️ Oops! Something went wrong. Please try again.";
+            }
+        } catch (error) {
+            statusEn.innerHTML = "⚠️ Connection error. Please try again later.";
+        }
+
+        setTimeout(() => {
+      statusEn.innerHTML = "";
+    }, 10000);
+    });
+</script>
+
+
+</html>

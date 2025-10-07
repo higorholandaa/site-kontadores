@@ -13,45 +13,46 @@ html, body {
   }
 
 .navbar {
-  height: 80px;
+   height: 80px;
 }
 
 .navbar-brand img {
-  height: 25px;
-}
-
-.navbar-collapse{
-  width: 100%;
-    top: 135px;
-    z-index: 2;
-    position: absolute;
-    background-color: #EEEEEE;
-    flex-grow: 1;
-    flex-basis: 100%;
-    padding-bottom: 10px;
-    align-items: center;
+    height: 25px;
 }
 
 .nav-link {
-  font-weight: 500;
-  color: #4D4D4D;
+    font-weight: 500;
+    color: #4D4D4D;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #0b57d0;
+    color: #0b57d0;
 }
 
 .btn-gradient {
-  background: linear-gradient(to right, #01124E, #F6C2F2);
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 8px 20px;
+    background: linear-gradient(to right, #01124E, #F6C2F2);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
 }
 
 .btn-gradient:hover {
   opacity: 0.9;
+}
+
+.btn-gradient-home{
+  background: linear-gradient(to right, #01124E, #F6C2F2);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 20rem;
+  padding: 9px 0;
+}
+
+.btn-gradient-home:hover {
+opacity: 0.9;
 }
 
 /* Select de idioma */
@@ -103,6 +104,15 @@ html, body {
   } */
 }
 
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* === Hero Section Custom Styles === */
 .hero-section {
@@ -145,7 +155,7 @@ html, body {
 .hero-section .img-decor {
   position: absolute;
   top: 20%;
-  left: 15px;
+  left: 2%;
   z-index: 1;
   width: 100px;
 }
@@ -620,7 +630,7 @@ html, body {
   .container-servicios {
     position: relative;
     z-index: 2;
-    max-width: 900px;
+    max-width: 80%;
     margin: auto;
     padding: 60px 20px;
   }
@@ -630,7 +640,7 @@ html, body {
     z-index: -1;
     max-height: 420px;
     margin-top: -225px;
-    right: -210px;
+    right: -6rem;
   }
 
   .check-servicios{
@@ -659,10 +669,15 @@ html, body {
   }
   
   .accordion-item {
-    background: linear-gradient(90deg, #3f51b5, #e1bdf3);
+    /* background: linear-gradient(90deg, #3f51b5, #e1bdf3); */
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease;
+  }
+
+  .accordion-item.open {
+    border: solid 3px #4761F7;
+    padding: 11px;
   }
   
   .accordion-header {
@@ -788,6 +803,7 @@ html, body {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    text-align: left;
     /* margin-bottom: 30px; */
   }
   
@@ -913,6 +929,7 @@ html, body {
       margin: 0 10px;
       height: 100%;
       transition: all 0.3s;
+      min-height: 25rem;
     }
 
     .testimonial-card:hover {
@@ -953,12 +970,13 @@ html, body {
       font-size: 0.95rem;
       color: #555;
       min-height: 80px;
+      text-align: left;
     }
 
     .carousel-indicators [data-bs-target] {
-      margin-top: 10px;
-      width: 8px;
-      height: 8px;
+      margin-top: 20px;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
       border: none;
       background-color: #d0d0d0;
@@ -1141,7 +1159,7 @@ html, body {
 
 .contact-custom-form .contact-submit-btn { /* Usando a nova classe exclusiva */
     background-color: #fff;
-    border-color: #fff;
+    border: none;
     color: #4761F7;
     font-weight: bold;
     padding: 10px 20px;
@@ -1334,4 +1352,71 @@ html, body {
     font-size: 13px;
     padding: 15px 10px;
   }
+}
+
+
+.member-photo{
+  border: solid 1px #4761F7;
+  border-radius: 10px;
+}
+
+
+.btn-equipo{
+  background: linear-gradient(to right, #01124E, #F6C2F2);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 3px 3px;
+    width: 9rem;
+}
+
+.btn-equipo :hover{
+  background: linear-gradient(to right, #01124E, #F6C2F2);
+  color: white;
+}
+
+#teamMembers{
+  margin: -1rem -8rem;
+}
+
+.caixa {
+  width: 4rem;
+  height: 4rem;
+  background: #f9f9f9;
+  border-left: 8px solid #8e78fb54;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 14rem;
+  margin-top: 3%;
+  transform: rotate(16deg);
+}
+
+.caixa img {
+  max-width: 40px; 
+}
+
+.circulo {
+  width: 4rem;
+  height: 4rem;
+  background: #4761F799;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 5rem;
+  margin-top: 5rem;
+}
+
+.social-icons a {
+  font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    background: #4761F7;
+    padding: 6px 10px;
+    border-radius: 9px;
 }

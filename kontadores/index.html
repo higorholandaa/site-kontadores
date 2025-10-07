@@ -12,387 +12,491 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white my-2">
-        <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center text-primary fw-bold" href="#">
-                <img src="img/LogotipoKontadores07.png" alt="Logo">
-            </a>
 
-            <!-- Botão mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <!-- Conteúdo do menu -->
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <!-- Links -->
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Clientes y comentarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nuestro equipo</a>
-                    </li>
-                </ul>
+    <div class="espanish">
 
-                <!-- Botões -->
-                <div class="d-flex align-items-center gap-2 flex-column flex-lg-row mt-3 mt-lg-0">
-                    <a href="#" class="btn btn-gradient">Contáctanos</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white my-2">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center text-primary fw-bold" href="#">
+                    <img src="img/LogotipoKontadores07.png" alt="Logo">
+                </a>
 
-                    <!-- Select de idioma -->
-                    <div class="language-select position-relative">
-                        <select class="form-select btn-language" onchange="changeFlag(this)">
-                            <option value="es" selected data-flag="https://flagcdn.com/es.svg">Español</option>
-                            <option value="en" data-flag="https://flagcdn.com/gb.svg">English</option>
-                            <option value="pt" data-flag="https://flagcdn.com/br.svg">Português</option>
-                        </select>
-                        <img id="lang-flag" src="https://flagcdn.com/es.svg" alt="flag" class="flag-img" />
+                <!-- Botão colapsável (mobile) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu principal -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobreNosotros">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#clientes">Clientes y comentarios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nuestroEquipo">Nuestro equipo</a></li>
+                    </ul>
+
+                    <!-- Botões -->
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="#contacto" class="btn btn-gradient">Contáctanos</a>
+                        <div class="language-select position-relative">
+                            <select class="form-select btn-language" onchange="changeFlag(this)">
+                                <option value="es" selected data-flag="https://flagcdn.com/es.svg">Español</option>
+                                <option value="en" data-flag="https://flagcdn.com/gb.svg">English</option>
+                            </select>
+                            <img id="lang-flag" src="https://flagcdn.com/es.svg" alt="flag" class="flag-img" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center flex-column-reverse flex-md-row text-center text-md-start">
-                <!-- Texto à esquerda -->
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h1>
-                        Transformamos <br />
-                        los números en <span class="text-primary">oportunidades</span>
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                        Suspendisse venenatis et nisi non pharetra. Nulla id tempus <br />
-                        metus. Suspendisse malesuada eu dolor in scelerisque.
-                    </p>
-                    <a href="#" class="btn btn-gradient mt-3">
-                        Realiza una consulta
-                    </a>
-                </div>
-
-                <!-- Imagem à direita -->
-                <div class="col-md-6 position-relative">
-                    <!-- Imagem principal -->
-                    <img src="img/notebook-home.png" alt="Notebook" class="img-fluid main-img" />
-
-                    <!-- Forma verde decorativa -->
-                    <img src="img/StickersForma0104.png" alt="Decor" class="img-decor" />
-
-                    <!-- Botão WhatsApp -->
-                    <a href="#" class="btn-whatsapp">
-                        <img class="img-whatsapp" src="img/btn-whatsapp.png" alt="WhatsApp" />
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Benefícios -->
-        <div class="benefits-section mt-5">
-            <div class="row text-center">
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <div class="benefit">
-                        <div class="icon">
-                            <img src="img/stars.svg" />
-                        </div>
-                        <h3>Resultados Rápidos</h3>
-                        <p>Confía en nuestros procesos y calidad de trabajo.</p>
+        <section class="hero-section" id="inicio">
+            <div class="container">
+                <div class="row align-items-center flex-column-reverse flex-md-row text-center text-md-start">
+                    <!-- Texto à esquerda -->
+                    <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center flex-column">
+                        <h1>
+                            Transformamos <br />
+                            los números en <span class="text-primary">oportunidades</span>
+                        </h1>
+                        <p>
+                            Somos una firma de Contadores Públicos Autorizados<br> y consultores en Panamá.
+                        </p>
+                        <a href="#contacto" class="btn btn-gradient-home mt-3">
+                            Realiza una consulta
+                        </a>
                     </div>
-                </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <div class="benefit">
-                        <div class="icon">
-                            <img src="img/stars.svg" />
-                        </div>
-                        <h3>Atención Personalizada</h3>
-                        <p>Contamos con un equipo de profesionales con atención 24/7.</p>
-                    </div>
-                </div>
+                    <!-- Imagem à direita -->
+                    <div class="col-md-6 position-relative">
+                        <!-- Imagem principal -->
+                        <img src="img/notebook-home.png" alt="Notebook" class="img-fluid main-img" />
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <div class="benefit">
-                        <div class="icon">
-                            <img src="img/stars.svg" />
-                        </div>
-                        <h3>Ideas de Negocio</h3>
-                        <p>Realizamos asesoría en cualquier tipo de área.</p>
-                    </div>
-                </div>
+                        <!-- Forma verde decorativa -->
+                        <img src="img/StickersForma0104.png" alt="Decor" class="img-decor" />
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <div class="benefit">
-                        <div class="icon">
-                            <img src="img/stars.svg" />
-                        </div>
-                        <h3>Calidad de Trabajo</h3>
-                        <p>Nuestro margen de resultados nos coloca como unos de los mejores medios oficiales de análisis
-                            financiero.</p>
+                        <!-- Botão WhatsApp -->
+                        <a href="https://web.whatsapp.com/send?phone=5076626-2822&text=" target="_blank"
+                            class="btn-whatsapp">
+                            <img class="img-whatsapp" src="img/btn-whatsapp.png" alt="WhatsApp" />
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="quienes-somos-section py-5">
-        <img src="img/circle.png" alt="Elemento decorativo superior direito" class="decor-circle-top-right">
-        <img src="img/arrow.png" alt="Elemento decorativo superior direito" class="decor-arrow-top-right">
-        <img src="img/dot-rectangle.png" alt="Elemento decorativo inferior esquerdo" class="decor-shape-bottom-left">
-        <img src="img/rectangle.png" alt="Elemento decorativo superior esquerdo" class="decor-shape-top-left">
-        <img src="img/trophy.png" alt="Elemento decorativo superior esquerdo" class="decor-shape-top-left-icon">
-        <img src="img/rectangle.png" alt="Elemento decorativo superior esquerdo" class="decor-rectangle-bottom-left">
-        <img src="img/lightning.png" alt="Elemento decorativo superior esquerdo"
-            class="decor-rectangle-bottom-left-icon">
-
-
-        <a href="#"><img class="img-arrow-double mb-5" src="img/doubleDown.png" /></a>
-        <div class="container text-center">
-            <!-- Título -->
-            <h2 class="fw-bold mb-3">
-                ¿Quiénes <span class="text-primary">somos?</span>
-            </h2>
-            <p class="mx-5">
-                En Kontadores, hacemos más que contabilidad. Somos una firma de contadores públicos autorizados en
-                Panamá
-                que combina experiencia y visión joven para ayudarte a tener claridad sobre tus números,
-                tomar mejores decisiones y llevar tu negocio al siguiente nivel.
-            </p>
-
-            <!-- Imagem com equipe -->
-            <div class="position-relative">
-                <img src="img/equipo-kontadores.png" alt="Equipo Kontadores"
-                    class="img-fluid rounded shadow-lg img-equipo">
-            </div>
-
-            <!-- Bloco inferior com 2 colunas -->
-            <div class="mision-vision-section">
-                <div class="container">
-                    <div class="stats-box">
-                        <div class="stat">
-                            <h3>+158</h3>
-                            <p>Proyectos completados</p>
-                        </div>
-                        <div class="stat">
-                            <h3>+287</h3>
-                            <p>Clientes satisfechos</p>
-                        </div>
-                        <div class="stat">
-                            <h3>+4K</h3>
-                            <p>Horas de trabajo</p>
-                        </div>
-                        <div class="stat">
-                            <h3>+10K</h3>
-                            <p>Documentos</p>
+            <!-- Benefícios -->
+            <div class="benefits-section mt-5">
+                <div class="row text-center">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="benefit">
+                            <div class="icon">
+                                <img src="img/stars.svg" />
+                            </div>
+                            <h3>Resultados Rápidos</h3>
+                            <p>Confía en nuestros procesos y calidad de trabajo.</p>
                         </div>
                     </div>
 
-                    <div class="mission-box">
-                        <div class="mission">
-                            <div class="icon">🏆</div>
-                            <div class="d-flex flex-wrap">
-                                <p>
-                                    <strong>Nuestra misión:</strong>
-                                    Acompañarte a crecer con <strong>tranquilidad financiera</strong>, brindándote el
-                                    orden, estrategia y claridad
-                                    que todo negocio necesita para avanzar.
-                                </p>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="benefit">
+                            <div class="icon">
+                                <img src="img/stars.svg" />
+                            </div>
+                            <h3>Atención Personalizada</h3>
+                            <p>Contamos con un equipo de profesionales con atención 24/7.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="benefit">
+                            <div class="icon">
+                                <img src="img/stars.svg" />
+                            </div>
+                            <h3>Ideas de Negocio</h3>
+                            <p>Realizamos asesoría en cualquier tipo de área.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="benefit">
+                            <div class="icon">
+                                <img src="img/stars.svg" />
+                            </div>
+                            <h3>Calidad de Trabajo</h3>
+                            <p>Nuestro margen de resultados nos coloca como unos de los mejores medios oficiales de
+                                análisis
+                                financiero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quienes-somos-section py-5" id="sobreNosotros">
+            <img src="img/circle.png" alt="Elemento decorativo superior direito" class="decor-circle-top-right">
+            <img src="img/arrow.png" alt="Elemento decorativo superior direito" class="decor-arrow-top-right">
+            <img src="img/dot-rectangle.png" alt="Elemento decorativo inferior esquerdo"
+                class="decor-shape-bottom-left">
+            <img src="img/rectangle.png" alt="Elemento decorativo superior esquerdo" class="decor-shape-top-left">
+            <img src="img/trophy.png" alt="Elemento decorativo superior esquerdo" class="decor-shape-top-left-icon">
+            <img src="img/rectangle.png" alt="Elemento decorativo superior esquerdo"
+                class="decor-rectangle-bottom-left">
+            <img src="img/lightning.png" alt="Elemento decorativo superior esquerdo"
+                class="decor-rectangle-bottom-left-icon">
+
+
+            <a href="#"><img class="img-arrow-double mb-5" src="img/doubleDown.png" /></a>
+            <div class="container text-center">
+                <!-- Título -->
+                <h2 class="fw-bold mb-3">
+                    ¿Quiénes <span class="text-primary">somos?</span>
+                </h2>
+                <p class="mx-5">
+                    En Kontadores, hacemos más que contabilidad. Somos una firma de contadores públicos autorizados en
+                    Panamá
+                    que combina experiencia y visión joven para ayudarte a tener claridad sobre tus números,
+                    tomar mejores decisiones y llevar tu negocio al siguiente nivel.
+                </p>
+
+                <!-- Imagem com equipe -->
+                <div class="position-relative">
+                    <img src="img/equipo-kontadores.png" alt="Equipo Kontadores"
+                        class="img-fluid rounded shadow-lg img-equipo">
+                </div>
+
+                <!-- Bloco inferior com 2 colunas -->
+                <div class="mision-vision-section">
+                    <div class="container">
+                        <div class="stats-box">
+                            <div class="stat">
+                                <h3>+158</h3>
+                                <p>Proyectos completados</p>
+                            </div>
+                            <div class="stat">
+                                <h3>+287</h3>
+                                <p>Clientes satisfechos</p>
+                            </div>
+                            <div class="stat">
+                                <h3>+4K</h3>
+                                <p>Horas de trabajo</p>
+                            </div>
+                            <div class="stat">
+                                <h3>+10K</h3>
+                                <p>Documentos</p>
                             </div>
                         </div>
-                        <div class="vision">
-                            <div class="icon">👁️</div>
-                            <div>
-                                <h3>Nuestra visión</h3>
-                                <p>
-                                    Transformar la contabilidad en una herramienta de empoderamiento para emprendedores
-                                    y dueños de negocios en
-                                    <strong>Panamá y toda Latinoamérica</strong>.
-                                </p>
+
+                        <div class="mission-box">
+                            <div class="mission">
+                                <div class="icon">
+                                    <img src="img/champion.png" alt="champion" width="35">
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <p>
+                                        <strong>Nuestra misión:</strong>
+                                        Acompañarte a crecer con <strong>tranquilidad financiera</strong>, brindándote
+                                        el
+                                        orden, estrategia y claridad
+                                        que todo negocio necesita para avanzar.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vision">
+                                <div class="icon">
+                                    <img src="img/eye.png" alt="eye" width="35">
+                                </div>
+                                <div class="d-flex flex-wrap">
+                                    <p>
+                                        <strong>Nuestra visión</strong>
+                                        Transformar la contabilidad en una herramienta de empoderamiento para
+                                        emprendedores
+                                        y dueños de negocios en
+                                        <strong>Panamá y toda Latinoamérica</strong>.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <section class="porque-kontadores">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <div class="text-content container container-porque">
-                        <h2>¿Por qué <span class="highlight">Kontadores</span>?</h2>
-                        <ul>
-                            <li>
-                                <span class="check"><img src="./img/check_service.png" class="check-servicios"></span>
-                                <strong>Hablamos tu idioma</strong>: sin tecnicismos, sin enredos.
-                            </li>
-                            <li>
-                                <span class="check"><img src="./img/check_service.png" class="check-servicios"></span>
-                                <strong>Y vamos más allá</strong>: Estamos integrando inteligencia artificial en
-                                nuestros
-                                procesos
-                                contables, lo que nos permite brindarte mayor rapidez, precisión y eficiencia en cada
-                                entrega.
-                            </li>
-                            <li>
-                                <span class="check"><img src="./img/check_service.png" class="check-servicios"></span>
-                                <strong>Somos digitales</strong>: Nuestros clientes nos comparten todos sus documentos
-                                de
-                                forma
-                                online: desde facturas y planillas, hasta fichas y reportes bancarios. Recibes tus
-                                informes
-                                y
-                                declaraciones sin moverte de tu negocio.
-                            </li>
-                            <li>
-                                <span class="check"><img src="./img/check_service.png" class="check-servicios"></span>
-                                <strong>Más que contadores</strong>: somos tu aliado estratégico.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 d-flex justify-content-end">
-                    <div class="image-content">
-                        <img src="img/Element.png" alt="Gráfico ilustrativo Kontadores" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="servicios">
-        <div class="container-servicios">
-            <div class="titulo-central">
-                <h2>Servicios</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis et nisi non pharetra.
-                    Nulla id tempus metus. Suspendisse malesuada eu dolor in scelerisque.</p>
-            </div>
-
-            <div class="accordion">
-                <!-- Acordeon 1 - aberto por padrão -->
-                <div class="accordion-item open">
-                    <div class="accordion-header">
-                        <div class="accordion-text-content">
-                            <h3>Servicios Contables y Fiscales</h3>
-                            <p>Llevamos tu contabilidad al día y te ayudamos a cumplir con todas tus obligaciones
-                                fiscales.
-                            </p>
+        <section class="porque-kontadores">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="text-content container container-porque">
+                            <h2>¿Por qué <span class="highlight">Kontadores</span>?</h2>
+                            <ul>
+                                <li>
+                                    <span class="check"><img src="./img/check_service.png"
+                                            class="check-servicios"></span>
+                                    <strong>Hablamos tu idioma</strong>: sin tecnicismos, sin enredos.
+                                </li>
+                                <li>
+                                    <span class="check"><img src="./img/check_service.png"
+                                            class="check-servicios"></span>
+                                    <strong>Y vamos más allá</strong>: Estamos integrando inteligencia artificial en
+                                    nuestros
+                                    procesos
+                                    contables, lo que nos permite brindarte mayor rapidez, precisión y eficiencia en
+                                    cada
+                                    entrega.
+                                </li>
+                                <li>
+                                    <span class="check"><img src="./img/check_service.png"
+                                            class="check-servicios"></span>
+                                    <strong>Somos digitales</strong>: Nuestros clientes nos comparten todos sus
+                                    documentos
+                                    de
+                                    forma
+                                    online: desde facturas y planillas, hasta fichas y reportes bancarios. Recibes tus
+                                    informes
+                                    y
+                                    declaraciones sin moverte de tu negocio.
+                                </li>
+                                <li>
+                                    <span class="check"><img src="./img/check_service.png"
+                                            class="check-servicios"></span>
+                                    <strong>Más que contadores</strong>: somos tu aliado estratégico.
+                                </li>
+                            </ul>
                         </div>
-                        <span class="icon"><i class="bi bi-plus-square"></i></span>
                     </div>
-                    <div class="accordion-content">
-                        <ul>
-                            <li><img src="./img/check_service.png" class="check-servicios"> Contabilidad mensual o por
-                                períodos;
-                            </li>
-                            <li><img src="./img/check_service.png" class="check-servicios"> Registros contables y
-                                conciliaciones bancarias;</li>
-                            <li><img src="./img/check_service.png" class="check-servicios"> Cierre fiscal anual;</li>
-                            <li><img src="./img/check_service.png" class="check-servicios"> Presentación de ITBMS,
-                                retenciones, dividendos;</li>
-                            <li><img src="./img/check_service.png" class="check-servicios"> Certificaciones de ingresos
-                                y otros informes financieros;</li>
-                            <li><img src="./img/check_service.png" class="check-servicios"> Asesoría en estructura
-                                contable de tu negocio;</li>
-                            <li><img src="./img/check_service.png" class="check-servicios"> Preparación de libros
-                                contables digitales.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Demais acordeons -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="accordion-text-content">
-                            <h3>Declaraciones de Renta y Municipio</h3>
+                    <div class="col-md-6 col-12 d-flex justify-content-end">
+                        <div class="image-content">
+                            <img src="img/Element.png" alt="Gráfico ilustrativo Kontadores" />
                         </div>
-                        <span class="icon"><i class="bi bi-plus-square"></i></span>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="accordion-text-center">
-                            <h3>Planilla y Gestión Laboral</h3>
-                        </div>
-                        <span class="icon"><i class="bi bi-plus-square"></i></span>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="accordion-text-center">
-                            <h3>Constitución y Formalización de Empresas</h3>
-                        </div>
-                        <span class="icon"><i class="bi bi-plus-square"></i></span>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="accordion-text-center">
-                            <h3>Devolución de Impuestos</h3>
-                        </div>
-                        <span class="icon"><i class="bi bi-plus-square"></i></span>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="accordion-text-center">
-                            <h3>Auditorías Externas</h3>
-                        </div>
-                        <span class="icon"><i class="bi bi-plus-square"></i></span>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="accordion-text-center">
-                            <h3>Otros Trámites</h3>
-                        </div>
-                        <span class="icon"><i class="bi bi-plus-square"></i></span>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="accordion-text-center">
-                            <h3>Otros Servicios Especiales</h3>
-                        </div>
-                        <span class="icon"><i class="bi bi-plus-square"></i></span>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <img src="./img/Apps.png" class="apps-servicios" />
-        </div>
-    </section>
+        <section class="servicios" id="servicios">
+            <div class="container-servicios">
+                <div class="circulo rotacionado">
+                    <img src="img/lightning.png" alt="lightning">
+                </div>
+                <div class="titulo-central">
+                    <h2>Servicios</h2>
+                    <p>Contabilidad clara y sencilla: gestionamos tus números sin complicaciones.
+                        Procesos eficientes: aprovechamos la inteligencia artificial para mayor rapidez y precisión.
+                        Todo digital: envía y recibe tus documentos e informes de manera online.
+                        Tu aliado estratégico: no solo llevamos tu contabilidad, apoyamos tus decisiones de negocio.</p>
+                </div>
 
-    <section class="clientes-section">
-        <div class="clientes-texto">
-            <h1><strong>Clientes</strong></h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis et nisi non
-                pharetra.
-                Nulla id tempus metus. Suspendisse malesuada eu dolor in scelerisque.
-            </p>
-        </div>
+                <div class="accordion">
+                    <!-- Acordeon 1 - aberto por padrão -->
+                    <div class="accordion-item open">
+                        <div class="accordion-header">
+                            <div class="accordion-text-content">
+                                <h3>Servicios Contables y Fiscales</h3>
+                                <p>Llevamos tu contabilidad al día y te ayudamos a cumplir con todas tus obligaciones
+                                    fiscales.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Contabilidad mensual o
+                                    por
+                                    períodos;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Registros contables y
+                                    conciliaciones bancarias;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Cierre fiscal anual;
+                                </li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Presentación de ITBMS,
+                                    retenciones, dividendos;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Certificaciones de
+                                    ingresos
+                                    y otros informes financieros;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Asesoría en estructura
+                                    contable de tu negocio;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Preparación de libros
+                                    contables digitales.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <!-- <div class="carousel-container">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-content">
+                                <h3>Declaraciones de Renta y Municipio</h3>
+                                <p>Te ayudamos a preparar y presentar tus declaraciones de renta y contribuciones
+                                    municipales de manera correcta y a tiempo.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Asesoría en declaración
+                                    de
+                                    impuestos;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Revisión de deducciones
+                                    y
+                                    créditos fiscales;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Presentación en línea a
+                                    la
+                                    municipalidad correspondiente.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Planilla y Gestión Laboral</h3>
+                                <p>Administramos la planilla de tu empresa y garantizamos el cumplimiento de todas las
+                                    obligaciones laborales y de seguridad social.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Elaboración de nóminas
+                                    mensuales;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Pago de prestaciones
+                                    sociales y beneficios;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Gestión de contratos y
+                                    seguros de empleados.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Constitución y Formalización de Empresas</h3>
+                                <p>Te guiamos en todo el proceso de creación de tu empresa, desde la planificación hasta
+                                    la
+                                    formalización legal.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Registro legal de la
+                                    empresa;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Obtención de licencias y
+                                    permisos;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Asesoría en estructura
+                                    societaria y estatutos.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Devolución de Impuestos</h3>
+                                <p>Gestionamos la devolución de impuestos de manera eficiente y asegurando que recibas
+                                    el
+                                    monto que te corresponde.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Revisión de pagos en
+                                    exceso;
+                                </li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Trámites ante la
+                                    autoridad
+                                    tributaria;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Preparación de
+                                    documentación
+                                    necesaria.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Auditorías Externas</h3>
+                                <p>Realizamos auditorías externas para evaluar la situación financiera y garantizar la
+                                    transparencia de tu empresa.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Auditoría financiera
+                                    anual;
+                                </li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Evaluación de procesos
+                                    internos;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Informe detallado con
+                                    recomendaciones.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Otros Trámites</h3>
+                                <p>Te ayudamos con diversos trámites administrativos y legales que tu negocio pueda
+                                    necesitar.</p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Renovación de licencias
+                                    y
+                                    permisos;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Trámites ante entidades
+                                    públicas;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Gestión de documentos
+                                    legales adicionales.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="accordion-text-center">
+                                <h3>Otros Servicios Especiales</h3>
+                                <p>Ofrecemos servicios personalizados adaptados a las necesidades únicas de tu empresa.
+                                </p>
+                            </div>
+                            <span class="icon"><i class="bi bi-plus-square"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Consultoría estratégica;
+                                </li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Implementación de
+                                    software
+                                    contable;</li>
+                                <li><img src="./img/check_service.png" class="check-servicios"> Capacitación y soporte
+                                    financiero.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <img src="./img/Apps.png" class="apps-servicios" />
+            </div>
+        </section>
+
+        <section class="clientes-section" id="clientes">
+            <div class="clientes-texto">
+                <h1><strong>Clientes</strong></h1>
+                <p class="text-center">
+                    Empresas que confían en nosotros para una contabilidad clara, rápida y precisa.
+                    Tu negocio, nuestra prioridad.
+                </p>
+            </div>
+
+            <!-- <div class="carousel-container">
             <div class="carousel-track-client">
                 <img src="img/alimenticias.png" alt="Cliente 1" />
                 <img src="img/gris.png" alt="Cliente 2" />
@@ -408,138 +512,145 @@
                 <span class="dot"></span>
             </div>
         </div> -->
-        <div class="swiper clients-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/alimenticias.png" alt="Cliente 1" /></div>
-                <div class="swiper-slide"><img src="img/gris.png" alt="Cliente 2" /></div>
-                <div class="swiper-slide"><img src="img/optilux.png" alt="Cliente 3" /></div>
-                <div class="swiper-slide"><img src="img/panama.png" alt="Cliente 4" /></div>
-                <div class="swiper-slide"><img src="img/services.png" alt="Cliente 5" /></div>
-                <div class="swiper-slide"><img src="img/traced.png" alt="Cliente 6" /></div>
-                <div class="swiper-slide"><img src="img/topex.png" alt="Cliente 7" /></div>
+            <div class="swiper clients-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/alimenticias.png" alt="Cliente 1" /></div>
+                    <div class="swiper-slide"><img src="img/gris.png" alt="Cliente 2" /></div>
+                    <div class="swiper-slide"><img src="img/optilux.png" alt="Cliente 3" /></div>
+                    <div class="swiper-slide"><img src="img/panama.png" alt="Cliente 4" /></div>
+                    <div class="swiper-slide"><img src="img/services.png" alt="Cliente 5" /></div>
+                    <div class="swiper-slide"><img src="img/traced.png" alt="Cliente 6" /></div>
+                    <div class="swiper-slide"><img src="img/topex.png" alt="Cliente 7" /></div>
 
-                <div class="swiper-slide"><img src="img/alimenticias.png" alt="Cliente 1" /></div>
-                <div class="swiper-slide"><img src="img/gris.png" alt="Cliente 2" /></div>
-                <div class="swiper-slide"><img src="img/optilux.png" alt="Cliente 3" /></div>
-                <div class="swiper-slide"><img src="img/panama.png" alt="Cliente 4" /></div>
-                <div class="swiper-slide"><img src="img/services.png" alt="Cliente 5" /></div>
-                <div class="swiper-slide"><img src="img/traced.png" alt="Cliente 6" /></div>
-                <div class="swiper-slide"><img src="img/topex.png" alt="Cliente 7" /></div>
+                    <div class="swiper-slide"><img src="img/alimenticias.png" alt="Cliente 1" /></div>
+                    <div class="swiper-slide"><img src="img/gris.png" alt="Cliente 2" /></div>
+                    <div class="swiper-slide"><img src="img/optilux.png" alt="Cliente 3" /></div>
+                    <div class="swiper-slide"><img src="img/panama.png" alt="Cliente 4" /></div>
+                    <div class="swiper-slide"><img src="img/services.png" alt="Cliente 5" /></div>
+                    <div class="swiper-slide"><img src="img/traced.png" alt="Cliente 6" /></div>
+                    <div class="swiper-slide"><img src="img/topex.png" alt="Cliente 7" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
+        </section>
 
-    <section class="testimonial-section">
-        <h2 class="testimonial-title">Comentarios</h2>
-        <p class="testimonial-subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis et nisi non pharetra.
-            Nulla id tempus metus. Suspendisse malesuada eu dolor in scelerisque.
-        </p>
+        <section class="testimonial-section">
+            <h2 class="testimonial-title">Comentarios</h2>
+            <p class="testimonial-subtitle">
+                Lo que dicen nuestros clientes: experiencias reales que destacan nuestra eficiencia, claridad y
+                compromiso.
+                Cada comentario refleja cómo ayudamos a negocios como el tuyo a crecer con confianza.
+            </p>
 
-        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
 
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center gap-4 flex-wrap">
-                        <div class="testimonial-card col-10 col-md-3">
-                            <div class="quote-icon">
-                                <img src="./img/quote.png" class="quote-img" />
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Katherine Morrison</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 1 año atrás</span></div>
+                                <div class="testimonial-text">
+                                    Excelente servicio! Los recomiendo al 1000%. El cliente en Uruguay puntualísimo y
+                                    muy
+                                    atentos en ayudar. ¡Muchas gracias!
+                                </div>
                             </div>
-                            <div class="testimonial-name">Katherine Morrison</div>
-                            <div class="testimonial-stars">★★★★★ <span class="text-muted">· 2 anõs</span></div>
-                            <div class="testimonial-text">
-                                Excelente servicio! Los recomiendo al 1000%. El cliente en Uruguay puntualísimo y muy
-                                atentos en ayudar. ¡Muchas gracias!
+
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Genesis Candanedo</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 3 años atrás</span>
+                                </div>
+                                <div class="testimonial-text">
+                                    Muy buena atención, excelente profesionalismo. Te ayudan en cada paso del proceso
+                                    con
+                                    rapidez, siempre consiguiendo la solución adecuada.
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Aimee Seefeldt</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 1 año atrás</span></div>
+                                <div class="testimonial-text">
+                                    Desde que empecé a asesorarme con ellos, WAO. Me enseñaron mucho de organización
+                                    financiera
+                                    y fueron súper profesionales. ¡¡Recomendado!!
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="testimonial-card col-10 col-md-3">
-                            <div class="quote-icon">
-                                <img src="./img/quote.png" class="quote-img" />
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Osmanli Dimas</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 1 año atrás</span></div>
+                                <div class="testimonial-text">
+                                    Gracias a Kontadores por el tiempo, dedicación para explicarme todo paso a paso y
+                                    ayudarme a mejorar mis finanzas en conjunto con la de mi esposo.
+                                </div>
                             </div>
-                            <div class="testimonial-name">Genesis Candanedo</div>
-                            <div class="testimonial-stars">★★★★★ <span class="text-muted">· 3 anõs</span></div>
-                            <div class="testimonial-text">
-                                Muy buena atención, excelente profesionalismo. Te ayudan en cada paso del proceso con
-                                rapidez, siempre consiguiendo la solución adecuada.
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Alejandro Ramírez</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 1 año atrás</span></div>
+                                <div class="testimonial-text">
+                                    El tiempo de respuesta fue excelente. Me atendieron de manera muy profesional y
+                                    resolvieron mi consulta tributaria específica con claridad y detalle.
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="testimonial-card col-10 col-md-3">
-                            <div class="quote-icon">
-                                <img src="./img/quote.png" class="quote-img" />
-                            </div>
-                            <div class="testimonial-name">Aimee Seefeldt</div>
-                            <div class="testimonial-stars">★★★★★ <span class="text-muted">· 6 meses</span></div>
-                            <div class="testimonial-text">
-                                Desde que empecé a asesorarme con ellos, WAO. Me enseñaron mucho de organización
-                                financiera
-                                y fueron súper profesionales. ¡¡Recomendado!!
+                            <div class="testimonial-card col-10 col-md-3">
+                                <div class="quote-icon">
+                                    <img src="./img/quote.png" class="quote-img" />
+                                </div>
+                                <div class="testimonial-name">Edgar Wong</div>
+                                <div class="testimonial-stars">★★★★★ <span class="text-muted">· 2 años atrás</span>
+                                </div>
+                                <div class="testimonial-text">
+                                    El tiempo de respuesta fue bueno. Me ayudaron con una consulta tributaria específica
+                                    y
+                                    resolvieron con claridad.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center gap-4 flex-wrap">
-                        <div class="testimonial-card col-10 col-md-3">
-                            <div class="quote-icon">
-                                <img src="./img/quote.png" class="quote-img" />
-                            </div>
-                            <div class="testimonial-name">Edgar Wong</div>
-                            <div class="testimonial-stars">★★★★☆ <span class="text-muted">· 9 reviews</span></div>
-                            <div class="testimonial-text">
-                                El tiempo de respuesta fue bueno. Me ayudaron con una consulta tributaria específica y
-                                resolvieron con claridad.
-                            </div>
-                        </div>
-                        <div class="testimonial-card col-10 col-md-3">
-                            <div class="quote-icon">
-                                <img src="./img/quote.png" class="quote-img" />
-                            </div>
-                            <div class="testimonial-name">Edgar Wong</div>
-                            <div class="testimonial-stars">★★★★☆ <span class="text-muted">· 9 reviews</span></div>
-                            <div class="testimonial-text">
-                                El tiempo de respuesta fue bueno. Me ayudaron con una consulta tributaria específica y
-                                resolvieron con claridad.
-                            </div>
-                        </div>
-                        <div class="testimonial-card col-10 col-md-3">
-                            <div class="quote-icon">
-                                <img src="./img/quote.png" class="quote-img" />
-                            </div>
-                            <div class="testimonial-name">Edgar Wong</div>
-                            <div class="testimonial-stars">★★★★☆ <span class="text-muted">· 9 reviews</span></div>
-                            <div class="testimonial-text">
-                                El tiempo de respuesta fue bueno. Me ayudaron con una consulta tributaria específica y
-                                resolvieron con claridad.
-                            </div>
-                        </div>
-                    </div>
+                <!-- Indicadores -->
+                <div class="carousel-indicators mt-5">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
                 </div>
             </div>
+        </section>
 
-            <!-- Indicadores -->
-            <div class="carousel-indicators mt-5">
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-            </div>
-        </div>
-    </section>
-
-    <section class="team-section py-5">
-        <div class="container">
-            <img src="./img/rectangle-large.png" class="rectangle-nuestro-equipo" />
-            <img src="./img/circles-together.png" class="circles-nuestro-equipo" />
-            <h1 class="text-center section-title fw-bold">Nuestros <span class="text-primary">equipo</span></h2>
+        <section class="team-section py-5" id="nuestroEquipo">
+            <div class="container">
+                <img src="./img/rectangle-large.png" class="rectangle-nuestro-equipo" />
+                <img src="./img/circles-together.png" class="circles-nuestro-equipo" />
+                <h1 class="text-center section-title fw-bold">Nuestros <span class="text-primary">equipo</span></h1>
                 <p class="text-center text-muted section-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra orci ut nulla.
-                    Fusce sit amet mi vel erat pulvinar efficitur. Mauris vitae libero quis turpis ullamcorper.
+                    Profesionales apasionados y comprometidos con tu éxito.
+                    Cada miembro de nuestro equipo combina experiencia y tecnología para ofrecer soluciones claras,
+                    rápidas y eficientes.
                 </p>
 
                 <div class="row g-4 mb-5">
@@ -553,7 +664,8 @@
                                 gestión digital.
                             </p>
                             <p>
-                                Combinamos experiencia técnica, actualización constante y un enfoque práctico para que
+                                Combinamos experiencia técnica, actualización constante y un enfoque práctico para
+                                que
                                 recibas siempre un <strong>servicio a la altura de tus necesidades.</strong>
                             </p>
                             <p>
@@ -564,7 +676,9 @@
                                 sin enredos.
                             </p>
                             <ul class="list-unstyled">
-                                <li><a href="#"><img src="./img/send.png" class="list-send" />Linkedin</a></li>
+                                <li><a href="https://www.linkedin.com/company/kontadorespa/about/" target="_blank"><img
+                                            src="./img/send.png" class="list-send" />Linkedin</a>
+                                </li>
                                 <li><a href="#"><img src="./img/send.png" class="list-send" />Instagram</a></li>
                                 <li><a href="#"><img src="./img/send.png" class="list-send" />Email</a></li>
                             </ul>
@@ -579,195 +693,167 @@
                     </div>
                 </div>
 
-                <div id="teamMembersCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row justify-content-center g-4">
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="member-card text-center p-2">
-                                        <img src="./img/persona-equipo.png" alt="Nome do Membro"
-                                            class="img-fluid  mb-2 member-photo">
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="member-card text-center p-2">
-                                        <img src="./img/persona-equipo.png" alt="Nome do Membro"
-                                            class="img-fluid  mb-2 member-photo">
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="member-card text-center p-2">
-                                        <img src="./img/persona-equipo.png" alt="Nome do Membro"
-                                            class="img-fluid  mb-2 member-photo">
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="member-card text-center p-2">
-                                        <img src="./img/persona-equipo.png" alt="Nome do Membro"
-                                            class="img-fluid  mb-2 member-photo">
-                                    </div>
-                                </div>
+                <div id="teamMembers" class="row justify-content-center g-4">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/persona-equipo.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/foto-func-1.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/foto-func-2.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/foto-func-3.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="member-card text-center p-2">
+                            <img src="./img/foto-func-4.png" class="img-fluid mb-2 member-photo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="decorative-circles d-none d-lg-block">
+                <span class="circle-sm position-absolute rounded-circle bg-info"></span>
+                <span class="circle-md position-absolute rounded-circle bg-primary"></span>
+                <span class="circle-lg position-absolute rounded-circle bg-secondary"></span>
+            </div>
+            <div class="decorative-dots d-none d-lg-block">
+                <span class="dot position-absolute rounded-circle bg-success"></span>
+                <span class="dot position-absolute rounded-circle bg-warning"></span>
+                <span class="dot position-absolute rounded-circle bg-danger"></span>
+            </div>
+        </section>
+
+        <section class="contact-section py-5" id="contacto">
+            <div class="container">
+                <div>
+                    <h1 class="text-center section-title">Contáctanos</h1>
+                    <p class="text-center text-muted mb-5 section-subtitle">Lorem ipsum dolor sit amet, consectetur
+                        Estamos aquí para ayudarte.
+                        Envíanos tus consultas o documentos y nuestro equipo te responderá rápidamente con soluciones
+                        claras
+                        y eficientes.</p>
+                </div>
+
+                <div class="contact-content row g-0">
+                    <div
+                        class="col-md-6 contact-image-half d-flex d-none d-sm-block flex-column align-items-center justify-content-end">
+                        <div class="image-overlay text-center pb-4">
+                        </div>
+                    </div>
+                    <div class="col-md-6 contact-form-half">
+                        <div class="caixa">
+                            <img src="img/emotion-smile1.png" alt="smile">
+                        </div>
+                        <form id="contact-form" action="https://formspree.io/f/movklgjr" method="POST"
+                            class="contact-custom-form">
+
+                            <div class="text-center">
+                                <p id="form-status" style="margin-top:10px; font-weight:bold;"></p>
                             </div>
-                        </div>
 
-                        <div class="carousel-item">
-                            <div class="row justify-content-center g-4">
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="member-card text-center p-2">
-                                        <img src="./img/persona-equipo.png" alt="Nome do Membro"
-                                            class="img-fluid  mb-2 member-photo">
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="member-card text-center p-2">
-                                        <img src="./img/persona-equipo.png" alt="Nome do Membro"
-                                            class="img-fluid  mb-2 member-photo">
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="member-card text-center p-2">
-                                        <img src="./img/persona-equipo.png" alt="Nome do Membro"
-                                            class="img-fluid  mb-2 member-photo">
-                                    </div>
-                                </div>
-
-                                <div class="col-6 col-md-4 col-lg-2">
-                                    <div class="member-card text-center p-2">
-                                        <img src="./img/persona-equipo.png" alt="Nome do Membro"
-                                            class="img-fluid  mb-2 member-photo">
-                                    </div>
-                                </div>
+                            <div class="mb-3">
+                                <label for="name" class="contact-form-label">Nombre</label>
+                                <input type="text" class="contact-form-control" name="name" placeholder="Tu nombre"
+                                    required>
                             </div>
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#teamMembersCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#teamMembersCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#teamMembersCarousel" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#teamMembersCarousel" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
+                            <div class="mb-3">
+                                <label for="email" class="contact-form-label">Email</label>
+                                <input type="email" class="contact-form-control" name="email" placeholder="tu@email.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="contact-form-label">Teléfono</label>
+                                <input type="tel" class="contact-form-control" name="phone"
+                                    placeholder="Tu número de teléfono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="contact-form-label">Mensaje (opcional)</label>
+                                <textarea class="contact-form-control" name="message" rows="4"
+                                    placeholder="Tu mensaje"></textarea>
+                            </div>
+                            <button type="submit" class="contact-submit-btn">Enviar</button>
+                        </form>
                     </div>
                 </div>
-        </div>
-        <div class="decorative-circles d-none d-lg-block">
-            <span class="circle-sm position-absolute rounded-circle bg-info"></span>
-            <span class="circle-md position-absolute rounded-circle bg-primary"></span>
-            <span class="circle-lg position-absolute rounded-circle bg-secondary"></span>
-        </div>
-        <div class="decorative-dots d-none d-lg-block">
-            <span class="dot position-absolute rounded-circle bg-success"></span>
-            <span class="dot position-absolute rounded-circle bg-warning"></span>
-            <span class="dot position-absolute rounded-circle bg-danger"></span>
-        </div>
-    </section>
-
-    <section class="contact-section py-5">
-        <div class="container">
-            <div>
-                <h1 class="text-center section-title">Contáctanos</h1>
-                <p class="text-center text-muted mb-5 section-subtitle">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing
-                    elit.
-                    Fusce sit amet mi vel erat pulvinar efficitur.</p>
             </div>
+        </section>
 
-            <div class="contact-content row g-0">
-                <div
-                    class="col-md-6 contact-image-half d-flex d-none d-sm-block flex-column align-items-center justify-content-end">
-                    <div class="image-overlay text-center pb-4">
+        <footer class="footer">
+            <div class="footer-content container">
+                <div class="footer-left mb-4">
+                    <div class="logo">
+                        <img src="img/LogotipoKontadores07.png" alt="logotipo" width="160">
+                        <!-- <span class="logo-icon">K</span>
+                    <span class="logo-text"></span> -->
+                    </div>
+                    <p>Ciudad de Panamá, Panamá</p>
+                    <p>kontadoresdigitales@gmail.com</p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://web.whatsapp.com/send?phone=5076626-2822&text=" target="_blank"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/company/kontadorespa/about/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 contact-form-half">
-                    <form class="contact-custom-form">
-                        <div class="mb-3">
-                            <label for="name" class="contact-form-label">Nombre</label> <input type="text"
-                                class="contact-form-control" id="name" placeholder="Tu nombre">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="contact-form-label">Email</label> <input type="email"
-                                class="contact-form-control" id="email" placeholder="tu@email.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="contact-form-label">Teléfono</label> <input type="tel"
-                                class="contact-form-control" id="phone" placeholder="Tu número de teléfono">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="contact-form-label">Mensaje (opcional)</label> <textarea
-                                class="contact-form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
-                        </div>
-                        <button type="submit" class="contact-submit-btn">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <footer class="footer">
-        <div class="footer-content container">
-            <div class="footer-left mb-4">
-                <div class="logo">
-                    <span class="logo-icon">K</span>
-                    <span class="logo-text">kontadores</span>
+                <div class="footer-links">
+                    <div>
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#sobreNosotros">Sobre nosotros</a></li>
+                            <li><a href="#nuestroEquipo">Nuestros equipo</a></li>
+                            <li><a href="#clientes">Clientes y comentarios</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contabilidad</h4>
+                        <ul>
+                            <li><a href="#servicios">Servicios</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><a href="#contacto">Contáctenos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Idioma</h4>
+                        <ul>
+                            <li><a href="index.html">Español</a></li>
+                            <li><a href="index-en.html">English</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <p>Ciudad de Panamá, Panamá</p>
-                <p>empresa@email.com</p>
 
-                <div class="social-icons">
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-tiktok"></i></a>
-                    <a href="#"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
+                <a href="#top" class="back-to-top">⬆</a>
             </div>
 
-            <div class="footer-links">
-                <div>
-                    <h4>Empresa</h4>
-                    <ul>
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="#">Nuestros equipo</a></li>
-                        <li><a href="#">Clientes y comentarios</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contabilidad</h4>
-                    <ul>
-                        <li><a href="#">Servicios</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li><a href="#">Contáctenos</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Idioma</h4>
-                    <ul>
-                        <li><a href="#">Español</a></li>
-                        <li><a href="#">English</a></li>
-                    </ul>
-                </div>
+            <div class="footer-bottom">
+                <p>© Kontadores 2025. All Rights Reserved.<br>Diseño y Desarrollo por: KONTADORES</p>
             </div>
+        </footer>
+    </div>
 
-            <a href="#top" class="back-to-top">⬆</a>
-        </div>
 
-        <div class="footer-bottom">
-            <p>© Kontadores 2025. All Rights Reserved.<br>Diseño y Desarrollo por: KONTADORES</p>
-        </div>
-    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
@@ -786,9 +872,17 @@
     });
 
     function changeFlag(select) {
-        const selected = select.options[select.selectedIndex];
-        const flagUrl = selected.getAttribute('data-flag');
-        document.getElementById('lang-flag').src = flagUrl;
+        const selectedOption = select.options[select.selectedIndex];
+        const lang = selectedOption.value; // "es" ou "en"
+        const flagUrl = selectedOption.getAttribute("data-flag");
+
+        document.getElementById("lang-flag").src = flagUrl;
+
+        if (lang === "es") {
+            window.location.href = "index.html";
+        } else if (lang === "en") {
+            window.location.href = "index-en.html";
+        }
     }
 
     const track = document.querySelector('.carousel-track-client');
@@ -830,6 +924,35 @@
                 spaceBetween: 20,
             }
         }
+    });
+
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            if (response.ok) {
+                status.innerHTML = "¡Gracias! Tu mensaje fue enviado correctamente.";
+                form.reset();
+            } else {
+                status.innerHTML = "⚠️ Ocurrió un error al enviar. Intenta nuevamente.";
+            }
+        } catch (error) {
+            status.innerHTML = "⚠️ Error de conexión. Intenta más tarde.";
+        }
+
+        setTimeout(() => {
+      statusEn.innerHTML = "";
+    }, 10000);
     });
 </script>
 
