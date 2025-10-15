@@ -43,9 +43,10 @@ html, body {
 }
 
 .btn-gradient-home{
-  background: linear-gradient(to right, #01124E, #F6C2F2);
   color: white;
+  background: #334197;
   border: none;
+  /* border: solid #fff; */
   border-radius: 20px;
   width: 20rem;
   padding: 9px 0;
@@ -53,6 +54,8 @@ html, body {
 
 .btn-gradient-home:hover {
 opacity: 0.9;
+color: #334197;
+border: solid #334197;
 }
 
 /* Select de idioma */
